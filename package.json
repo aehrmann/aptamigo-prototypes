@@ -1,0 +1,16 @@
+{
+  "name": "aptamigo-prototypes-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ariehrmann/aptamigo-prototypes-nodes.git"
+  },
+  "author": "Ari Ehrmann",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ariehrmann/aptamigo-prototypes-nodes#readme"
+}
