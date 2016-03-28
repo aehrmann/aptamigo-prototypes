@@ -2,8 +2,6 @@ var express = require('express');
 var port = process.env.PORT || 5000;
 var app = express();
 
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/public/index.html');
-}).configure(function() {
-  app.use('/', express.static(__dirname + '/public/'));
-}).listen(port);
+app.use('/', express.static(__dirname + '/public'));
+
+app.listen(port);
