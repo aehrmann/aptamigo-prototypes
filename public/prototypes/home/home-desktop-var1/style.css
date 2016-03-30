@@ -3,12 +3,43 @@ body[data-controller="pages"][data-action="index"] .hero {
   background-image: url('../assets/images/bright-apartment.jpg');
 }
 
+.neighborhoods {
+  padding-top: 3rem;
+}
+
+.neighborhoods h2 {
+  margin-bottom: 1rem;
+}
+
+.neighborhoods .list {
+  margin-top: 0;
+}
+
+body[data-controller="pages"][data-action="index"] .neighborhoods .neighborhood h3,
+body[data-controller="pages"][data-action="index"] .properties .property h3 {
+    font-size: 1.4em;
+    overflow-wrap: break-word;
+    text-align: center;
+    top: 50%;
+    white-space: normal;
+    width: 80%;
+}
+
+body[data-controller="pages"][data-action="index"] .neighborhoods .list {
+  margin-top: 0;
+}
+
+body[data-controller="pages"][data-action="index"] .neighborhoods {
+  padding-top: 2rem;
+}
+
+
 .video-wrapper {
     background-image: url('../assets/images/video-bg-951583b8ba033462727d61aa449e1872e0a41b31b7fce3fbb1fe57fc3b64f72f.jpg');
     background-size: cover;
     margin-right: 10%;
-    margin-top: 10%;
-    padding-bottom: 29%;
+    margin-top: 11%;
+    padding-bottom: 19%;
     padding-top: 16%;
     text-align: center;
 }
@@ -25,4 +56,42 @@ body[data-controller="pages"][data-action="index"] .hero {
 
 .callout {
   background-image: none;
+}
+
+.properties-reviews {
+  background-color: #ddd;
+  margin-top: 3rem;
+}
+
+body[data-controller="pages"][data-action="index"] .properties {
+  padding-top: 3rem;
+}
+
+body[data-controller="pages"][data-action="index"] .properties .list {
+    margin: 23px 0;
+}
+
+body[data-controller="pages"][data-action="index"] .reviews .list {
+  padding-top: 32px;
+}
+body[data-controller="pages"][data-action="index"] .reviews .review .top img {
+  height: 80%;
+}
+
+body[data-controller="pages"][data-action="index"] .reviews .review .bottom {
+  height: 300px;
+  margin-top: -2.4rem;
+}
+
+body[data-controller="pages"][data-action="index"] .reviews .review .bottom .stars {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+body[data-controller="pages"][data-action="index"] .reviews .review .avatar {
+  top: 36px;
+}
+
+body[data-controller="pages"][data-action="index"] .reviews .review .bottom .text {
+  top: 84%;
 }

@@ -744,235 +744,224 @@
       </div>
     </div>
 
-    <div class="properties">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">Best Rated Chicago Apartments for Rent</h2>
-            <div class="list">
-              <div class="row">
-                <div class="col-sm-3">
-                  <a href=
-                    "https://www.aptamigo.com/IL/Chicago/Apartment/the-streeter"
-                    target="_blank">
-                    <div class="property">
-                      <h3>The Streeter</h3>
-                      <div data-bg-image=
-                        "../assets/images/4f32464c-922a-4c7a-82cb-6a2dd12a2464.jpg">
-                      </div>
-                  </div></a>
-                </div>
-                <div class="col-sm-9">
-                  <a href=
-                    "https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center"
-                    target="_blank">
-                    <div class="property">
-                      <h3>Optima Chicago Center</h3>
-                      <div data-bg-image=
-                        "../assets/images/f33120d1-617a-481d-848b-4f47b1c739b1.jpg">
-                      </div>
-                  </div></a>
-                </div>
-                <div class="col-sm-6">
-                  <a href=
-                    "https://www.aptamigo.com/IL/Chicago/Apartment/belden-stratford"
-                    target="_blank">
-                    <div class="property">
-                      <h3>Belden Stratford</h3>
-                      <div data-bg-image=
-                        "../assets/images/e2c33ac5-4151-4c53-9f23-5f734dc3715a.jpg">
-                      </div>
-                  </div></a>
-                </div>
-                <div class="col-sm-6">
-                  <a href=
-                    "https://www.aptamigo.com/IL/Chicago/Apartment/aqua-chicago"
-                    target="_blank">
-                    <div class="property">
-                      <h3>Aqua Chicago</h3>
-                      <div data-bg-image=
-                        "../assets/images/781adff1-476f-442d-b628-728d1820d389.jpg">
-                      </div>
-                  </div></a>
-                </div>
-                <div class="col-sm-9">
-                  <a href=
-                    "https://www.aptamigo.com/IL/Chicago/Apartment/amli-river-north"
-                    target="_blank">
-                    <div class="property">
-                      <h3>AMLI River North</h3>
-                      <div data-bg-image=
-                        "../assets/images/8cf698fc-91d3-4034-acd8-2b8284f444ae.jpg">
-                      </div>
-                  </div></a>
-                </div>
-                <div class="col-sm-3">
-                  <a href=
-                    "https://www.aptamigo.com/IL/Chicago/Apartment/arkadia-tower-chicago"
-                    target="_blank">
-                    <div class="property">
-                      <h3>Arkadia Tower Chicago</h3>
-                      <div data-bg-image=
-                        "../assets/images/332c7fec-1202-4a3a-a78c-b7fa06369723.jpg">
-                      </div>
-                  </div></a>
-                </div>
-              </div>
-              <div class="float-right">
-                <a href="https://www.aptamigo.com/search">All Apartments</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="youtube-modal">
-      <div class="modal-container">
-        <div class="center">
-          <div class="video-wrapper">
-            <iframe allowfullscreen="allowfullscreen" id="youtube_player" name=
-              "youtube_player" src=
-              "https://www.youtube.com/embed/VY6vWTrBMig?enablejsapi=1&amp;rel=0"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      (function() {
-
-        var playerShowing = false;
-
-        $("body").keyup(function(e) {
-          if(e.keyCode == 27 && playerShowing)
-            hideModal();
-        });
-
-        function showModal() {
-          $('.youtube-modal, .youtube-modal .modal-container').addClass("show animated fadeIn").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass("animated fadeIn");
-            var youtubePlayer = $('iframe',this)[0];
-            var youtube_command = window.JSON.stringify( { event: 'command', func: 'playVideo' } );
-            youtubePlayer.contentWindow.postMessage( youtube_command, 'https://www.youtube.com' );
-          });
-            playerShowing = true;
-        }
-
-        function hideModal() {
-          $('.youtube-modal, .youtube-modal .modal-container').addClass("animated fadeOut").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass("show animated fadeOut");
-            var youtubePlayer = $('iframe',this)[0];
-            var youtube_command = window.JSON.stringify( { event: 'command', func: 'pauseVideo' } );
-            youtubePlayer.contentWindow.postMessage( youtube_command, 'https://www.youtube.com' );
-          });
-            playerShowing = false;
-        }
-
-        $(".video-trigger").on("click", showModal);
-        $('.youtube-modal').on("click", hideModal);
-      })()
-    </script>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <a href="index.html">
-              <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg id="Layer_1" version="1.1" viewbox="0 0 570.8 548.1" x="0px"
-                xmlns="http://www.w3.org/2000/svg" y="0px">
-                <g id="v1.1_dark">
-                  <g id="icon">
-                    <path d=
-                    "M142.2,345.6L142.2,345.6c28.3,85.3,120,131.3,205.3,103c29.7-9.9,55-28.8,73.9-49.8l140.5-158.2 c9.3-10.1,10.7-24.6,6.7-36.6c-4-12-13.7-22.2-27.3-25.3l-207.1-42.8c-27.8-5.6-58.7-5.7-89,4.3 C160,168.5,113.9,260.3,142.2,345.6L142.2,345.6z M341.9,279.3c10.3,31-6.6,64.7-37.6,74.9c-31,10.3-64.7-6.6-74.9-37.6 c-10.3-31,6.6-64.7,37.6-74.9C298,231.4,331.6,248.3,341.9,279.3L341.9,279.3z M341.9,279.3"
-                    fill="#68BE73"></path>
-                    <path d=
-                    "M285.5,449.4L285.5,449.4c89.9,0,162.4-72.6,162.4-162.4c0-31.3-10-61.2-23.9-85.8L318.1,17.9 C311.5,6,298.1,0,285.5,0c-12.6,0-25.3,6-32.6,17.9L147,201c-14,24.6-23.9,54-23.9,85.8C123.1,376.7,195.7,449.4,285.5,449.4 L285.5,449.4z M285.5,239c32.6,0,59.3,26.6,59.3,59.3s-26.7,59.3-59.3,59.3s-59.3-26.7-59.3-59.3C226.2,265.5,252.9,239,285.5,239 L285.5,239z M285.5,239"
-                    fill="#5897C2"></path>
-                    <path d=
-                    "M428.5,345.6c28.3-85.3-17.8-177-103.1-205.3c-30.2-10-61.2-9.9-89-4.3L29.4,178.6 C15.7,181.8,6.1,192,2.1,204c-4,12-2.5,26.6,6.7,36.6l140.5,158.2c18.9,21,44.2,39.9,73.9,49.8 C308.5,476.8,400.2,430.8,428.5,345.6L428.5,345.6L428.5,345.6z M228.9,279.3c10.3-31,43.9-47.9,74.9-37.6 c31,10.3,47.9,44,37.6,74.9c-10.3,31-44,47.9-74.9,37.6C235.5,343.9,218.6,310.2,228.9,279.3L228.9,279.3z M228.9,279.3"
-                    fill="#D13993"></path>
-                    <path d=
-                    "M373.5,175.3c-73-52.3-174.3-35.5-226.7,37.5c-18.6,25.9-27.6,55.5-30.5,83.7L95.7,506.9 c-1,14,5.8,26.2,16.1,33.6c10.3,7.4,24.6,10.3,37,4.4l192.7-87.2c25.6-11.9,51.2-30.4,69.4-55.8 C463.3,328.9,446.6,227.6,373.5,175.3L373.5,175.3L373.5,175.3z M251,346.3c-26.5-19-32.7-56.1-13.7-82.7 c19-26.5,56.2-32.7,82.7-13.7s32.7,56.2,13.7,82.7C314.7,359.2,277.5,365.3,251,346.3L251,346.3z M251,346.3"
-                    fill="#F36F37"></path>
-                    <path d=
-                    "M197.3,175.3L197.3,175.3c-73,52.3-89.7,153.6-37.4,226.6c18.2,25.5,43.8,43.9,69.4,55.8L422.1,545 c12.4,5.9,26.7,2.9,37-4.4c10.3-7.3,17.1-19.6,16.1-33.6l-20.6-210.5c-2.9-28.2-12-57.8-30.5-83.7 C371.7,139.8,270.4,122.9,197.3,175.3L197.3,175.3z M319.9,346.3c-26.5,19-63.7,12.9-82.7-13.7s-12.9-63.7,13.7-82.7 s63.7-12.9,82.7,13.7C352.6,290.2,346.4,327.3,319.9,346.3L319.9,346.3z M319.9,346.3"
-                    fill="#E9B620"></path>
-                  </g>
-            </g></svg></a>
-            <div class="footer-nav">
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="http://blog.aptamigo.com">Blog</a>
-                </li>
-                <li>
-                  <a data-keyboard="true" data-target="#support-modal"
-                    data-toggle="modal" href="index.html#" rel=
-                    "nofollow">Support</a>
-                </li>
-                <li>
-                  <a href="https://www.aptamigo.com/terms">Terms &amp;
-                    Conditions</a>
-                </li>
-                <li>
-                  <a href="https://www.aptamigo.com/privacy">Privacy Policy</a>
-                </li>
-              </ul>
-              <div class="copyright">
-                &copy; 2016 AptAmigo, Inc. All rights reserved.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="footer-border">
-      <div class="color yellow"></div>
-      <div class="color orange"></div>
-      <div class="color purple"></div>
-      <div class="color blue"></div>
-      <div class="color green"></div>
-    </div>
-    <div class="modal fade" id="support-modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="header">
-                    Support Form<button aria-label="Close" class="close"
-                      data-dismiss="modal" type="button"><span aria-hidden=
-                        "true">×</span></button>
+    <div class="properties-reviews">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="properties">
+            <div class="col-sm-11 col-sm-offset-1">
+              <h2>Best Rated Chicago Apartments for Rent</h2>
+              <div class="list">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <a href=
+                      "https://www.aptamigo.com/IL/Chicago/Apartment/the-streeter"
+                      target="_blank">
+                      <div class="property">
+                        <h3>The Streeter</h3>
+                        <div data-bg-image=
+                          "../assets/images/4f32464c-922a-4c7a-82cb-6a2dd12a2464.jpg">
+                        </div>
+                    </div></a>
                   </div>
-                  <div class="info"></div>
-                  <div class="error"></div>
-                  <div class="success"></div>
-                  <form accept-charset="UTF-8" action=
-                    "https://www.aptamigo.com/supports" class="new_support"
-                    data-remote="true" id="new_support" method="post" name=
-                    "new_support">
-                    <input name="utf8" type="hidden" value="&#x2713;">
-                    <div class="field">
-                      <input id="support_name" name="support[name]" placeholder=
-                      "Full name *" type="text" value="">
+                  <div class="col-sm-4">
+                    <a href=
+                      "https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center"
+                      target="_blank">
+                      <div class="property">
+                        <h3>Optima Chicago Center</h3>
+                        <div data-bg-image=
+                          "../assets/images/f33120d1-617a-481d-848b-4f47b1c739b1.jpg">
+                        </div>
+                    </div></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href=
+                      "https://www.aptamigo.com/IL/Chicago/Apartment/belden-stratford"
+                      target="_blank">
+                      <div class="property">
+                        <h3>Belden Stratford</h3>
+                        <div data-bg-image=
+                          "../assets/images/e2c33ac5-4151-4c53-9f23-5f734dc3715a.jpg">
+                        </div>
+                    </div></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href=
+                      "https://www.aptamigo.com/IL/Chicago/Apartment/aqua-chicago"
+                      target="_blank">
+                      <div class="property">
+                        <h3>Aqua Chicago</h3>
+                        <div data-bg-image=
+                          "../assets/images/781adff1-476f-442d-b628-728d1820d389.jpg">
+                        </div>
+                    </div></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href=
+                      "https://www.aptamigo.com/IL/Chicago/Apartment/amli-river-north"
+                      target="_blank">
+                      <div class="property">
+                        <h3>AMLI River North</h3>
+                        <div data-bg-image=
+                          "../assets/images/8cf698fc-91d3-4034-acd8-2b8284f444ae.jpg">
+                        </div>
+                    </div></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href=
+                      "https://www.aptamigo.com/IL/Chicago/Apartment/arkadia-tower-chicago"
+                      target="_blank">
+                      <div class="property">
+                        <h3>Arkadia Tower Chicago</h3>
+                        <div data-bg-image=
+                          "../assets/images/332c7fec-1202-4a3a-a78c-b7fa06369723.jpg">
+                        </div>
+                    </div></a>
+                  </div>
+                </div>
+                <div class="float-left">
+                  <a href="https://www.aptamigo.com/search">All Apartments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="reviews">
+            <div class="row">
+              <div class="col-md-11">
+                <h2 class="text-center">Your Friends Love Us Too</h2>
+                <div class="list">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                      <div class="review">
+                        <div class="avatar"><img alt=
+                          "Testimonial 1 9f4ba9b9da9922e649ccb3e8467566b0317747bbd16f0e1547c9c997d4323adb"
+                          src=
+                          "../assets/images/testimonial_1-9f4ba9b9da9922e649ccb3e8467566b0317747bbd16f0e1547c9c997d4323adb.jpg"></div>
+                        <div class="top"><img alt=
+                          "Review bg 1 e2d0527efeb75f0faf66c78cb28928e5173018f3d737cb9ef6e653f3ab963603"
+                          src=
+                          "../assets/images/review-bg-1-e2d0527efeb75f0faf66c78cb28928e5173018f3d737cb9ef6e653f3ab963603.png"></div>
+                        <div class="bottom yellow">
+                          <div class="name">
+                            Alex
+                          </div>
+                          <div class="apt">
+                            West Loop Gate
+                          </div>
+                          <div class="text-wrapper">
+                            <div class="text">
+                              "AptAmigo helped me find a great place that's a short
+                              walk from work and the best restaurants in the city!"
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <i class="fa fa-star"></i><i class=
+                              "fa fa-star"></i><i class="fa fa-star"></i><i class=
+                              "fa fa-star"></i><i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="field">
-                      <input id="support_email" name="support[email]"
-                      placeholder="Email address *" type="text" value="">
+                    <div class="col-md-3 col-sm-6">
+                      <div class="review">
+                        <div class="avatar"><img alt=
+                          "Testimonial 2 8b77c1f07478d19a16ea7bccef88978fa2c5813bfb306fe4544ad1b5bdc81bad"
+                          src=
+                          "../assets/images/testimonial_2-8b77c1f07478d19a16ea7bccef88978fa2c5813bfb306fe4544ad1b5bdc81bad.jpg"></div>
+                        <div class="top"><img alt=
+                          "Review bg 2 2270b395619ce915aa077f3acde9fef0547e71097bfd41e79d2e80b89b3b1510"
+                          src=
+                          "../assets/images/review-bg-2-2270b395619ce915aa077f3acde9fef0547e71097bfd41e79d2e80b89b3b1510.png"></div>
+                        <div class="bottom orange">
+                          <div class="name">
+                            Sagar
+                          </div>
+                          <div class="apt">
+                            River North
+                          </div>
+                          <div class="text-wrapper">
+                            <div class="text">
+                              "I wanted great nearby nightlife, but a quiet place to
+                              come home to. AptAmigo put me in control of the process
+                              and I couldn't be happier."
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="field">
-                      <input id="support_subject" name="support[subject]"
-                      placeholder="Subject" type="text">
+                    <div class="col-md-3 col-sm-6">
+                      <div class="review">
+                        <div class="avatar"><img alt=
+                          "Testimonial 3 28bd1abe38a83098534910d9084a435dce5ae85a4c789a5c36e97a8a929ebe66"
+                          src=
+                          "../assets/images/testimonial_3-28bd1abe38a83098534910d9084a435dce5ae85a4c789a5c36e97a8a929ebe66.jpg"></div>
+                        <div class="top"><img alt=
+                          "Review bg 3 3b4354c7efc9eee487208d2452958f4898919eeb13f8faa66b7fb036a1f6fe2d"
+                          src=
+                          "../assets/images/review-bg-3-3b4354c7efc9eee487208d2452958f4898919eeb13f8faa66b7fb036a1f6fe2d.png"></div>
+                        <div class="bottom purple">
+                          <div class="name">
+                            Rachel
+                          </div>
+                          <div class="apt">
+                            Old Town
+                          </div>
+                          <div class="text-wrapper">
+                            <div class="text">
+                              "Moving is the worst. AptAmigo helped me find a place I
+                              won't be leaving for years!"
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <i class="fa fa-star"></i><i class=
+                              "fa fa-star"></i><i class="fa fa-star"></i><i class=
+                              "fa fa-star"></i><i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="field">
-                      <textarea id="support_message" name="support[message]"
-                        placeholder="Message *"></textarea>
-                    </div><input class="btn btn-block" data-disable-with=
-                    "Submitting" name="commit" type="submit" value="Submit">
-                  </form>
+                    <div class="col-md-3 col-sm-6">
+                      <div class="review">
+                        <div class="avatar"><img alt=
+                          "Testimonial 4 b7de79f77f649747ce9a1775bd133eba24d714ba395d6171841297f4540c5620"
+                          src=
+                          "../assets/images/testimonial_4-b7de79f77f649747ce9a1775bd133eba24d714ba395d6171841297f4540c5620.png"></div>
+                        <div class="top"><img alt=
+                          "Review bg 4 7371b664f1928ea62e49a2f8123e4202fd0f2b8d517d0f2426cb462596cf4e7b"
+                          src=
+                          "../assets/images/review-bg-4-7371b664f1928ea62e49a2f8123e4202fd0f2b8d517d0f2426cb462596cf4e7b.png"></div>
+                        <div class="bottom blue">
+                          <div class="name">
+                            Ben
+                          </div>
+                          <div class="apt">
+                            River North
+                          </div>
+                          <div class="text-wrapper">
+                            <div class="text">
+                              "I couldn't decide between River North, Gold Coast, or
+                              Lincoln Park until AptAmigo helped me find the perfect
+                              place."
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <i class="fa fa-star"></i><i class=
+                              "fa fa-star"></i><i class="fa fa-star"></i><i class=
+                              "fa fa-star"></i><i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -980,14 +969,168 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#support-modal").on('show.bs.modal', function(){
-          $('.success, .error', this).html("");
-          $("#new_support").show();
+
+      <div class="youtube-modal">
+        <div class="modal-container">
+          <div class="center">
+            <div class="video-wrapper">
+              <iframe allowfullscreen="allowfullscreen" id="youtube_player" name=
+                "youtube_player" src=
+                "https://www.youtube.com/embed/VY6vWTrBMig?enablejsapi=1&amp;rel=0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        (function() {
+
+          var playerShowing = false;
+
+          $("body").keyup(function(e) {
+            if(e.keyCode == 27 && playerShowing)
+              hideModal();
+          });
+
+          function showModal() {
+            $('.youtube-modal, .youtube-modal .modal-container').addClass("show animated fadeIn").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(this).removeClass("animated fadeIn");
+              var youtubePlayer = $('iframe',this)[0];
+              var youtube_command = window.JSON.stringify( { event: 'command', func: 'playVideo' } );
+              youtubePlayer.contentWindow.postMessage( youtube_command, 'https://www.youtube.com' );
+            });
+              playerShowing = true;
+          }
+
+          function hideModal() {
+            $('.youtube-modal, .youtube-modal .modal-container').addClass("animated fadeOut").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(this).removeClass("show animated fadeOut");
+              var youtubePlayer = $('iframe',this)[0];
+              var youtube_command = window.JSON.stringify( { event: 'command', func: 'pauseVideo' } );
+              youtubePlayer.contentWindow.postMessage( youtube_command, 'https://www.youtube.com' );
+            });
+              playerShowing = false;
+          }
+
+          $(".video-trigger").on("click", showModal);
+          $('.youtube-modal').on("click", hideModal);
+        })()
+      </script>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="index.html">
+                <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg id="Layer_1" version="1.1" viewbox="0 0 570.8 548.1" x="0px"
+                  xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <g id="v1.1_dark">
+                    <g id="icon">
+                      <path d=
+                      "M142.2,345.6L142.2,345.6c28.3,85.3,120,131.3,205.3,103c29.7-9.9,55-28.8,73.9-49.8l140.5-158.2 c9.3-10.1,10.7-24.6,6.7-36.6c-4-12-13.7-22.2-27.3-25.3l-207.1-42.8c-27.8-5.6-58.7-5.7-89,4.3 C160,168.5,113.9,260.3,142.2,345.6L142.2,345.6z M341.9,279.3c10.3,31-6.6,64.7-37.6,74.9c-31,10.3-64.7-6.6-74.9-37.6 c-10.3-31,6.6-64.7,37.6-74.9C298,231.4,331.6,248.3,341.9,279.3L341.9,279.3z M341.9,279.3"
+                      fill="#68BE73"></path>
+                      <path d=
+                      "M285.5,449.4L285.5,449.4c89.9,0,162.4-72.6,162.4-162.4c0-31.3-10-61.2-23.9-85.8L318.1,17.9 C311.5,6,298.1,0,285.5,0c-12.6,0-25.3,6-32.6,17.9L147,201c-14,24.6-23.9,54-23.9,85.8C123.1,376.7,195.7,449.4,285.5,449.4 L285.5,449.4z M285.5,239c32.6,0,59.3,26.6,59.3,59.3s-26.7,59.3-59.3,59.3s-59.3-26.7-59.3-59.3C226.2,265.5,252.9,239,285.5,239 L285.5,239z M285.5,239"
+                      fill="#5897C2"></path>
+                      <path d=
+                      "M428.5,345.6c28.3-85.3-17.8-177-103.1-205.3c-30.2-10-61.2-9.9-89-4.3L29.4,178.6 C15.7,181.8,6.1,192,2.1,204c-4,12-2.5,26.6,6.7,36.6l140.5,158.2c18.9,21,44.2,39.9,73.9,49.8 C308.5,476.8,400.2,430.8,428.5,345.6L428.5,345.6L428.5,345.6z M228.9,279.3c10.3-31,43.9-47.9,74.9-37.6 c31,10.3,47.9,44,37.6,74.9c-10.3,31-44,47.9-74.9,37.6C235.5,343.9,218.6,310.2,228.9,279.3L228.9,279.3z M228.9,279.3"
+                      fill="#D13993"></path>
+                      <path d=
+                      "M373.5,175.3c-73-52.3-174.3-35.5-226.7,37.5c-18.6,25.9-27.6,55.5-30.5,83.7L95.7,506.9 c-1,14,5.8,26.2,16.1,33.6c10.3,7.4,24.6,10.3,37,4.4l192.7-87.2c25.6-11.9,51.2-30.4,69.4-55.8 C463.3,328.9,446.6,227.6,373.5,175.3L373.5,175.3L373.5,175.3z M251,346.3c-26.5-19-32.7-56.1-13.7-82.7 c19-26.5,56.2-32.7,82.7-13.7s32.7,56.2,13.7,82.7C314.7,359.2,277.5,365.3,251,346.3L251,346.3z M251,346.3"
+                      fill="#F36F37"></path>
+                      <path d=
+                      "M197.3,175.3L197.3,175.3c-73,52.3-89.7,153.6-37.4,226.6c18.2,25.5,43.8,43.9,69.4,55.8L422.1,545 c12.4,5.9,26.7,2.9,37-4.4c10.3-7.3,17.1-19.6,16.1-33.6l-20.6-210.5c-2.9-28.2-12-57.8-30.5-83.7 C371.7,139.8,270.4,122.9,197.3,175.3L197.3,175.3z M319.9,346.3c-26.5,19-63.7,12.9-82.7-13.7s-12.9-63.7,13.7-82.7 s63.7-12.9,82.7,13.7C352.6,290.2,346.4,327.3,319.9,346.3L319.9,346.3z M319.9,346.3"
+                      fill="#E9B620"></path>
+                    </g>
+              </g></svg></a>
+              <div class="footer-nav">
+                <ul>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="http://blog.aptamigo.com">Blog</a>
+                  </li>
+                  <li>
+                    <a data-keyboard="true" data-target="#support-modal"
+                      data-toggle="modal" href="index.html#" rel=
+                      "nofollow">Support</a>
+                  </li>
+                  <li>
+                    <a href="https://www.aptamigo.com/terms">Terms &amp;
+                      Conditions</a>
+                  </li>
+                  <li>
+                    <a href="https://www.aptamigo.com/privacy">Privacy Policy</a>
+                  </li>
+                </ul>
+                <div class="copyright">
+                  &copy; 2016 AptAmigo, Inc. All rights reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-border">
+        <div class="color yellow"></div>
+        <div class="color orange"></div>
+        <div class="color purple"></div>
+        <div class="color blue"></div>
+        <div class="color green"></div>
+      </div>
+      <div class="modal fade" id="support-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="header">
+                      Support Form<button aria-label="Close" class="close"
+                        data-dismiss="modal" type="button"><span aria-hidden=
+                          "true">×</span></button>
+                    </div>
+                    <div class="info"></div>
+                    <div class="error"></div>
+                    <div class="success"></div>
+                    <form accept-charset="UTF-8" action=
+                      "https://www.aptamigo.com/supports" class="new_support"
+                      data-remote="true" id="new_support" method="post" name=
+                      "new_support">
+                      <input name="utf8" type="hidden" value="&#x2713;">
+                      <div class="field">
+                        <input id="support_name" name="support[name]" placeholder=
+                        "Full name *" type="text" value="">
+                      </div>
+                      <div class="field">
+                        <input id="support_email" name="support[email]"
+                        placeholder="Email address *" type="text" value="">
+                      </div>
+                      <div class="field">
+                        <input id="support_subject" name="support[subject]"
+                        placeholder="Subject" type="text">
+                      </div>
+                      <div class="field">
+                        <textarea id="support_message" name="support[message]"
+                          placeholder="Message *"></textarea>
+                      </div><input class="btn btn-block" data-disable-with=
+                      "Submitting" name="commit" type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $("#support-modal").on('show.bs.modal', function(){
+            $('.success, .error', this).html("");
+            $("#new_support").show();
+          });
         });
-      });
-    </script>
-    <script src="../home-main.js"></script>
-  </body>
+      </script>
+      <script src="../home-main.js"></script>
+    </body>
 </html>
