@@ -1,0 +1,23 @@
+/*hero bg image*/
+body[data-controller="pages"][data-action="index"].home-var1 .hero {
+  background-image: url('assets/images/bright-apartment.jpg');
+}
+
+/*nav bar bg color*/
+body[data-controller="pages"][data-action="index"].home-var1 nav.main {
+  background-color: #26374c;
+}
+
+/*nav bar link spacing*/
+.home-var1 nav.main .links li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.home-var1 .neighborhoods {
+  padding-top: 30px;
+}
+
+.home-var1 .neighborhoods .list {
+  margin-top: 0;
+}
