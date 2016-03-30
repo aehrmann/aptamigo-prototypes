@@ -4,8 +4,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/ariehrmann/aptamigo-prototypes-nodes.git"
+    "url": "git@bitbucket.org:ariehrmann/aptamigo-prototypes.git"
   },
   "author": "Ari Ehrmann",
-  "homepage": "https://bitbucket.org/ariehrmann/aptamigo-prototypes-nodes#readme"
+  "homepage": "https://bitbucket.org/ariehrmann/aptamigo-prototypes#readme"
 }
