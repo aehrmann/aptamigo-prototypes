@@ -15,8 +15,6 @@ nav.main .links li.login {
   margin-right: 1.25rem;
 }
 
-
-
 .neighborhoods {
   padding-top: 30px;
 }
@@ -28,7 +26,7 @@ nav.main .links li.login {
 body[data-controller="pages"][data-action="index"] .neighborhoods .neighborhood h3,
 body[data-controller="pages"][data-action="index"] .properties .property h3 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
