@@ -13018,8 +13018,8 @@ th {
 
   @font-face {
     font-family: 'FontAwesome';
-    src: url("assets/font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot");
-    src: url("assets/font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot?#iefix") format("embedded-opentype"), url("assets/font-awesome/fontawesome-webfont-199411f659f41aaccb959bacb1b0de30e54f244352a48c6f9894e65ae0f8a9a1.woff") format("woff"), url("assets/font-awesome/fontawesome-webfont-4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa.ttf") format("truetype"), url("assets/font-awesome/fontawesome-webfont-d5b5636ebb2e124810436200086b74a60dff9e8a8be7f4a1088bf5d3458bc3c8.svg#fontawesomeregular") format("svg");
+    src: url("font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot");
+    src: url("font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot?#iefix") format("embedded-opentype"), url("font-awesome/fontawesome-webfont-199411f659f41aaccb959bacb1b0de30e54f244352a48c6f9894e65ae0f8a9a1.woff") format("woff"), url("font-awesome/fontawesome-webfont-4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa.ttf") format("truetype"), url("font-awesome/fontawesome-webfont-d5b5636ebb2e124810436200086b74a60dff9e8a8be7f4a1088bf5d3458bc3c8.svg#fontawesomeregular") format("svg");
     font-weight: normal;
     font-style: normal
   }
