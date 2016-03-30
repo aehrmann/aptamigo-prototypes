@@ -3,11 +3,19 @@ body[data-controller="pages"][data-action="index"] nav.main {
   background-color: #26374c;
 }
 
-/*nav bar link spacing*/
-nav.main .links li {
-  margin-left: 15px;
-  margin-right: 15px;
+/*nav bar*/
+nav.main .links ul {
+  margin-right: 4em;
 }
+
+nav.main .links li, 
+nav.main .links li.button,
+nav.main .links li.login {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+
 
 .neighborhoods {
   padding-top: 30px;
