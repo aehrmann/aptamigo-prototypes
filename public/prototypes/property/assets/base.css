@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'raty';
     src: url('fonts/raty/raty-webfont.eot');
-    src: url('fonts/raty/raty-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/raty/raty-webfont.woff2') format('woff2'),
          url('fonts/raty/raty-webfont.woff') format('woff'),
          url('fonts/raty/raty-webfont.ttf') format('truetype'),
@@ -7837,7 +7836,7 @@ body[data-controller="pages"][data-action="index"] .reviews .review .avatar img 
 }
 .property .available-units .unit .front .slick-prev {
     left: 10px;
-    background-image: url(/assets/arrow-850ad4f15745215483e0519b7a96ac2b322fc9388564239c94b9b19edfc008db.png);
+    background-image: url(arrow-850ad4f15745215483e0519b7a96ac2b322fc9388564239c94b9b19edfc008db.png);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -7846,7 +7845,7 @@ body[data-controller="pages"][data-action="index"] .reviews .review .avatar img 
 }
 .property .available-units .unit .front .slick-next {
     right: 10px;
-    background-image: url(/assets/arrow-850ad4f15745215483e0519b7a96ac2b322fc9388564239c94b9b19edfc008db.png)
+    background-image: url(arrow-850ad4f15745215483e0519b7a96ac2b322fc9388564239c94b9b19edfc008db.png)
 }
 .property .available-units .unit .front .description {
     white-space: nowrap;
@@ -13019,8 +13018,11 @@ Copyright (c) 2015 Daniel Eden
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url("/assets/font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot");
-    src: url("/assets/font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot?#iefix") format("embedded-opentype"), url("/assets/font-awesome/fontawesome-webfont-199411f659f41aaccb959bacb1b0de30e54f244352a48c6f9894e65ae0f8a9a1.woff") format("woff"), url("/assets/font-awesome/fontawesome-webfont-4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa.ttf") format("truetype"), url("/assets/font-awesome/fontawesome-webfont-d5b5636ebb2e124810436200086b74a60dff9e8a8be7f4a1088bf5d3458bc3c8.svg#fontawesomeregular") format("svg");
+    src: url("font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot");
+    src: url("font-awesome/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot?#iefix") format("embedded-opentype");
+    src: url("font-awesome/fontawesome-webfont-199411f659f41aaccb959bacb1b0de30e54f244352a48c6f9894e65ae0f8a9a1.woff") format("woff")
+    src: url("font-awesome/fontawesome-webfont-4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa.ttf") format("truetype")
+    src: url("font-awesome/fontawesome-webfont-d5b5636ebb2e124810436200086b74a60dff9e8a8be7f4a1088bf5d3458bc3c8.svg#fontawesomeregular") format("svg");
     font-weight: normal;
     font-style: normal
 }

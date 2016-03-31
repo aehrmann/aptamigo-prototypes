@@ -1,4 +1,0 @@
-/*hero bg image*/
-body[data-controller="pages"][data-action="index"] .hero {
-  background-image: url('../assets/images/modern-apartment.jpg');
-}
