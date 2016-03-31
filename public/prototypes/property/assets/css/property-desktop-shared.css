@@ -1,0 +1,101 @@
+/* Hero image ======================================== */
+.property .cover {
+  height: 530px;
+}
+
+/* Information overview ======================================== */
+.property .meta .wrapper {
+  height: 180px;
+}
+.property .meta .info {
+  margin-left: 0;
+  display: block;
+}
+
+.property .meta-info {
+  margin-top: 1.5rem;
+}
+
+.property .meta-info .row {
+  text-align: center;
+}
+
+.property .meta .info h2.like-body,
+.property .meta .info p {
+  font-size: 1.8rem;
+}
+
+/* Floating tour/contact form ======================================== */
+.rankings a.dark-blue {
+  color: #26374c;
+}
+
+.rankings .yellow {
+  color: #eab61d;
+  margin-right: 0.5rem;
+}
+
+.address-section {
+  padding-right: 4rem;
+}
+
+.address-section .address {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.property .container-wrapper .property-card .stars {
+  float: right;
+  font-size: 1.75rem;
+}
+
+.property .container-wrapper .property-card .stars .review-count {
+  font-size: 1.75rem;
+  margin-left: 0.5rem;
+}
+
+.property-card strong.neighborhood-name {
+  margin-left: 0.5rem;
+}
+
+/* About description section ======================================== */
+.about .row {
+  position: relative;
+}
+
+.about .card-track {
+  position: absolute;
+  right: 0;
+  top: -230px;
+}
+
+.about .card-track .property-card {
+  margin-top: 0;
+}
+
+.about .property-card a {
+  margin-top: 0.5rem;
+}
+
+.property .container-wrapper .property-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.about .property-card .right.rankings {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.about .property-card a.contact {
+  margin-top: 1.5rem;
+}
+
+.property .info .meta-info-wrapper {
+  position: relative;
+  margin-left: -5rem;
+}
+
+.property .meta .info h2.like-body {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
