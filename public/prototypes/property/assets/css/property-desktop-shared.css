@@ -66,11 +66,7 @@
 .about .card-track {
   position: absolute;
   right: 0;
-  top: -230px;
-}
-
-.about .card-track .property-card {
-  margin-top: 0;
+  top: -250px;
 }
 
 .about .property-card a {
