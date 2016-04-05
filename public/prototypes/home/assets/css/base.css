@@ -6602,7 +6602,7 @@ th {
   }
   body[data-controller="pages"][data-action="index"] .hero {
     height: 595px;
-    background-image: url(images/hero-bg1-10db90abbaeeb684c90101298d6ff1f3c5dae2758182abb6f99c6c82f14ed70c.jpg);
+    background-image: url(../images/hero-bg1-10db90abbaeeb684c90101298d6ff1f3c5dae2758182abb6f99c6c82f14ed70c.jpg);
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -6703,7 +6703,7 @@ th {
     -webkit-appearance: none;
     border: none;
     font-size: 15px;
-    background-image: url(images/icon-caret-39ecb8cb6f58aae9f88f857ddf74659b396bae3fc854a850406fd9290a6d4887.png);
+    background-image: url(../images/icon-caret-39ecb8cb6f58aae9f88f857ddf74659b396bae3fc854a850406fd9290a6d4887.png);
     background-repeat: no-repeat;
     background-position: 92% 50%;
     border-left: 1px solid #c4c4c4;
@@ -6869,7 +6869,7 @@ th {
   }
   body[data-controller="pages"][data-action="index"] .callout {
     height: 500px;
-    background-image: url(images/video-bg-951583b8ba033462727d61aa449e1872e0a41b31b7fce3fbb1fe57fc3b64f72f.jpg);
+    background-image: url(../images/video-bg-951583b8ba033462727d61aa449e1872e0a41b31b7fce3fbb1fe57fc3b64f72f.jpg);
     background-size: cover;
     background-position: center center
   }
