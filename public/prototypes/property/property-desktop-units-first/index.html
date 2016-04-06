@@ -231,6 +231,7 @@
     <title>Optima Chicago Center Apartment Reviews, Chicago IL | AptAmigo</title>
     <link rel="stylesheet" media="all" href="../assets/css/base.css">
     <link rel="stylesheet" media="all" href="../assets/css/property-desktop-shared.css">
+    <link rel="stylesheet" href="units-first.css">
     <script src="../assets/jquery.min.js"></script>
     <script src="../assets/application-309a154151ac9e7ddfba0c4a62795ce840432d668babc2d50231d2e2628c9a89.js"></script>
     <meta name="csrf-param" content="authenticity_token">
@@ -447,6 +448,25 @@
                     </svg>
                 </a>
             </div>
+            <form id="default_search_form" method="get">
+              <input type="hidden" name="neighborhood_id" id="neighborhood_id">
+              <div class="search-wrapper">
+                <input type="text" name="search_text" id="search_text" class="search-box" placeholder="Search..." autocomplete="off">
+                <i class="search-icon glyphicon glyphicon-search"></i>
+                <div class="autocomplete">
+                  <h5>Neighborhoods</h5>
+                  <ul class="neighborhood-result">
+                    <li><a data-neighborhood-id="0">Chicago (All)</a></li>
+                    <li><a data-neighborhood-id="river-north">River North</a></li>
+                    <li><a data-neighborhood-id="streeterville">Streeterville</a></li>
+                    <li><a data-neighborhood-id="gold-coast">Gold Coast</a></li>
+                    <li><a data-neighborhood-id="lincoln-park">Lincoln Park</a></li>
+                    <li><a data-neighborhood-id="lakeview">Lakeview</a></li>
+                    <li><a target="_blank" href="http://blog.aptamigo.com/neighborhood-guide">See More...</a></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
             <div class="links">
                 <div class="wrapper">
                     <li class="login">Log In</li>
@@ -694,79 +714,7 @@
                     <p>Communal Grill</p>
                   </li>
                 </ul>
-                <div class="reviews">
-                  <div>
-                    <h4>Reviews</h4>
-                  </div>
-                  <div class="averages">
-                    <div class="average">
-                      <p class="bold">Overall</p>
-                      <div class="stars">
-                        <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                          <input name="score" type="hidden" value="5" readonly="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="average">
-                      <p>Neighborhood/Community</p>
-                      <div class="stars">
-                        <div class="rating_stars" data-rating="4.0" title="Very Good"><i data-alt="1" class="star-on-png" title="Very Good"></i><i data-alt="2" class="star-on-png" title="Very Good"></i><i data-alt="3" class="star-on-png" title="Very Good"></i><i data-alt="4" class="star-on-png" title="Very Good"></i><i data-alt="5" class="star-off-png" title="Very Good"></i>
-                          <input name="score" type="hidden" value="4" readonly="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="average">
-                      <p>Doormen/Security</p>
-                      <div class="stars">
-                        <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                          <input name="score" type="hidden" value="5" readonly="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="average">
-                      <p>In-Unit Experience</p>
-                      <div class="stars">
-                        <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                          <input name="score" type="hidden" value="5" readonly="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="average">
-                      <p>Property Mangement</p>
-                      <div class="stars">
-                        <div class="rating_stars" data-rating="3.0" title="Ok"><i data-alt="1" class="star-on-png" title="Ok"></i><i data-alt="2" class="star-on-png" title="Ok"></i><i data-alt="3" class="star-on-png" title="Ok"></i><i data-alt="4" class="star-off-png" title="Ok"></i><i data-alt="5" class="star-off-png" title="Ok"></i>
-                          <input name="score" type="hidden" value="3" readonly="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="average">
-                      <p>Amenities</p>
-                      <div class="stars">
-                        <div class="rating_stars" data-rating="4.5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-half-png" title="Excellent"></i>
-                          <input name="score" type="hidden" value="4.5" readonly="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="review-list">
-                    <div class="review">
-                      <div class="avatar"><img src="./../assets/temp-d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d.png" alt="Temp d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d">
-                      </div>
-                      <div class="content">
-                        <div class="name">Rohit D.</div>
-                        <div class="stars">
-                          <div class="rating_stars" data-rating="5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                            <input name="score" type="hidden" value="5" readonly="">
-                          </div>
-                        </div>
-                        <div class="date">Jul 30</div>
-                        <div>
-                          <p class="text">The building agents are a bit tough to deal with, but the building itself is wonderful as are the doormen. </p>
-                        </div><a class="button detailed-review" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">Detailed Review</a>
-                      </div>
-                    </div><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">+ More Reviews</a>
-                  </div>
-                </div>
+
               </div>
               <div class="col-md-5 card-track hidden-sm hidden-xs">
                 <div class="property-card spacer" style="top: 0px;">
@@ -982,40 +930,117 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-          <div class="top-apartments">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <h4>Other Nearby Buildings</h4>
-                  <div class="apartments row">
-                    <div class="apartment col-md-4">
-                      <a href="https://www.aptamigo.com/IL/Chicago/Apartment/860-880-n-lake-shore">
-                        <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg&quot;);"></div>
-                        <h4 class="address">860 / 880 N Lake Shore<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
-                      </a>
-                    </div>
-                    <div class="apartment col-md-4">
-                      <a href="https://www.aptamigo.com/IL/Chicago/Apartment/river-east-center">
-                        <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg&quot;);"></div>
-                        <h4 class="address">River East Center<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(2)</div></div></h4>
-                      </a>
-                    </div>
-                    <div class="apartment col-md-4">
-                      <a href="https://www.aptamigo.com/IL/Chicago/Apartment/the-esplanade-apts">
-                        <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg&quot;);"></div>
-                        <div class="units">1 Unit
-                          <br><span class="tiny">Available</span>
-                        </div>
-                        <h4 class="address">The Esplanade Apts.<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
-                      </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="reviews-section">
+                <div>
+                  <h4>Reviews</h4>
+                </div>
+                <div class="averages">
+                  <div class="average">
+                    <p class="bold">Overall</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="5" readonly="">
+                      </div>
                     </div>
                   </div>
+                  <div class="average">
+                    <p>Neighborhood/Community</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="4.0" title="Very Good"><i data-alt="1" class="star-on-png" title="Very Good"></i><i data-alt="2" class="star-on-png" title="Very Good"></i><i data-alt="3" class="star-on-png" title="Very Good"></i><i data-alt="4" class="star-on-png" title="Very Good"></i><i data-alt="5" class="star-off-png" title="Very Good"></i>
+                        <input name="score" type="hidden" value="4" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>Doormen/Security</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="5" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>In-Unit Experience</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="5" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>Property Mangement</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="3.0" title="Ok"><i data-alt="1" class="star-on-png" title="Ok"></i><i data-alt="2" class="star-on-png" title="Ok"></i><i data-alt="3" class="star-on-png" title="Ok"></i><i data-alt="4" class="star-off-png" title="Ok"></i><i data-alt="5" class="star-off-png" title="Ok"></i>
+                        <input name="score" type="hidden" value="3" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>Amenities</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="4.5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-half-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="4.5" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-list">
+                  <div class="review">
+                    <div class="avatar"><img src="./../assets/temp-d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d.png" alt="Temp d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d">
+                    </div>
+                    <div class="content">
+                      <div class="name">Rohit D.</div>
+                      <div class="stars">
+                        <div class="rating_stars" data-rating="5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                          <input name="score" type="hidden" value="5" readonly="">
+                        </div>
+                      </div>
+                      <div class="date">Jul 30</div>
+                      <div>
+                        <p class="text">The building agents are a bit tough to deal with, but the building itself is wonderful as are the doormen. </p>
+                      </div><a class="button detailed-review" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">Detailed Review</a>
+                    </div>
+                  </div><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">+ More Reviews</a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+    <div class="top-apartments">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Other Nearby Buildings</h4>
+            <div class="apartments row">
+              <div class="apartment col-md-4">
+                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/860-880-n-lake-shore">
+                  <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg&quot;);"></div>
+                  <h4 class="address">860 / 880 N Lake Shore<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
+                </a>
+              </div>
+              <div class="apartment col-md-4">
+                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/river-east-center">
+                  <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg&quot;);"></div>
+                  <h4 class="address">River East Center<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(2)</div></div></h4>
+                </a>
+              </div>
+              <div class="apartment col-md-4">
+                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/the-esplanade-apts">
+                  <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg&quot;);"></div>
+                  <div class="units">1 Unit
+                    <br><span class="tiny">Available</span>
+                  </div>
+                  <h4 class="address">The Esplanade Apts.<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
           <div id="mobile-buttons">
             <a class="button" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">
               <div>Contact Property</div>
@@ -1024,61 +1049,60 @@
               <div>Request Tour</div>
             </a>
           </div>
-        </div>
-    <div class="modal fade" id="lead-modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
+          <div class="modal fade" id="lead-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
                 <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="header">Contact Information
-                                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-                                <div class="info">
-                                    <p>A representative will get back to you within 1 business day.</p>
-                                </div>
-                                <div class="error"></div>
-                                <div class="success"></div>
-                                <form class="new_lead" id="new_lead" action="https://www.aptamigo.com/properties/optima-chicago-center/leads" accept-charset="UTF-8" data-remote="true" method="post">
-                                    <input name="utf8" type="hidden" value="✓">
-                                    <input type="hidden" name="lead[unit_id]" id="lead_unit_id">
-                                    <div class="field">
-                                        <input placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name">
-                                    </div>
-                                    <div class="field">
-                                        <input placeholder="Email address *" value="" type="text" name="lead[email]" id="lead_email">
-                                    </div>
-                                    <div class="field">
-                                        <input placeholder="Phone number" type="text" name="lead[phone]" id="lead_phone">
-                                    </div>
-                                    <div class="field half">
-                                        <select name="lead[bed_count_desired]" id="lead_bed_count_desired">
-                                            <option disabled="" default="" selected="">Beds *</option>
-                                            <option value="0">Studio</option>
-                                            <option value="1">1+</option>
-                                            <option value="2">2+</option>
-                                            <option value="3">3+</option>
-                                            <option value="4">4+</option>
-                                            <option value="5">5+</option>
-                                        </select>
-                                    </div>
-                                    <div class="field half clear-fix">
-                                        <input placeholder="Move-in date *" readonly="readonly" class="date-picker" type="text" name="lead[move_in_date]" id="lead_move_in_date">
-                                    </div>
-                                    <div class="field">
-                                        <textarea placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
-                                    </div>
-                                    <input type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting">
-                                </form>
-                            </div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="header">Contact Information
+                          <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span>
+                          </button>
                         </div>
+                        <div class="info">
+                          <p>A representative will get back to you within 1 business day.</p>
+                        </div>
+                        <div class="error"></div>
+                        <div class="success"></div>
+                        <form class="new_lead" id="new_lead" action="https://www.aptamigo.com/properties/optima-chicago-center/leads" accept-charset="UTF-8" data-remote="true" method="post">
+                          <input name="utf8" type="hidden" value="✓">
+                          <input type="hidden" name="lead[unit_id]" id="lead_unit_id">
+                          <div class="field">
+                            <input placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name">
+                          </div>
+                          <div class="field">
+                            <input placeholder="Email address *" value="" type="text" name="lead[email]" id="lead_email">
+                          </div>
+                          <div class="field">
+                            <input placeholder="Phone number" type="text" name="lead[phone]" id="lead_phone">
+                          </div>
+                          <div class="field half">
+                            <select name="lead[bed_count_desired]" id="lead_bed_count_desired">
+                              <option disabled="" default="" selected="">Beds *</option>
+                              <option value="0">Studio</option>
+                              <option value="1">1+</option>
+                              <option value="2">2+</option>
+                              <option value="3">3+</option>
+                              <option value="4">4+</option>
+                              <option value="5">5+</option>
+                            </select>
+                          </div>
+                          <div class="field half clear-fix">
+                            <input placeholder="Move-in date *" readonly="readonly" class="date-picker" type="text" name="lead[move_in_date]" id="lead_move_in_date">
+                          </div>
+                          <div class="field">
+                            <textarea placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
+                          </div>
+                          <input type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting">
+                        </form>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
     <script type="text/javascript">
         $(document).ready(function() {
             $("#lead-modal").on('show.bs.modal', function() {
