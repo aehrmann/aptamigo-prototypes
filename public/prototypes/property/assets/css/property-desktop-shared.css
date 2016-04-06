@@ -8,8 +8,8 @@
   height: 180px;
 }
 .property .meta .info {
-  margin-left: 0;
   display: block;
+  margin-left: 0;
 }
 
 .property .meta-info {
@@ -40,8 +40,8 @@
 }
 
 .address-section .address {
-  padding-bottom: 0.5rem;
   border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
 }
 
 .property .container-wrapper .property-card .stars {
@@ -74,8 +74,8 @@
 }
 
 .property .container-wrapper .property-card h4 {
-  margin-top: 0;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .about .property-card .right.rankings {
@@ -87,11 +87,39 @@
 }
 
 .property .info .meta-info-wrapper {
-  position: relative;
   margin-left: -5rem;
+  position: relative;
 }
 
 .property .meta .info h2.like-body {
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Navbar search ======================================== */
+.search-wrapper {
+  width: 100%;
+}
+
+form#default_search_form {
+  display: inline-block;
+  margin-left: 5rem;
+  margin-top: 2.5rem;
+  width: 8%;
+}
+
+form#default_search_form input[type="text"] {
+  font-size: 1.5rem;
+  line-height: 1.75;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+
+}
+
+form#default_search_form .search-icon {
+  color: #333;
+  position: absolute;
+  right: 8%;
+  top: 25%;
 }
