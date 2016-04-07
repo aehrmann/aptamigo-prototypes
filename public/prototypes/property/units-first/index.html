@@ -4,10 +4,13 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="../assets/analytics.js" async=""></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="../assets/application-309a154151ac9e7ddfba0c4a62795ce840432d668babc2d50231d2e2628c9a89.js"></script>
     <script async="" charset="utf-8" src="../assets/saved_resource.js" type="text/javascript"></script>
     <script async="" src="../assets/fbevents.js"></script>
     <script async="" src="../assets/gtm.js"></script>
+    <script src="../assets/custom-main.js"></script>
     <script type="text/javascript">
         window.NREUM || (NREUM = {});
         NREUM.info = {
@@ -229,9 +232,9 @@
         }, {}, ["loader"]);
     </script>
     <title>Optima Chicago Center Apartment Reviews, Chicago IL | AptAmigo</title>
-    <link rel="stylesheet" media="all" href="../assets/base.css">
-    <script src="../assets/jquery.min.js"></script>
-    <script src="../assets/application-309a154151ac9e7ddfba0c4a62795ce840432d668babc2d50231d2e2628c9a89.js"></script>
+    <link rel="stylesheet" media="all" href="../assets/css/base.css">
+    <link rel="stylesheet" media="all" href="../assets/css/custom-main.css">
+    <link rel="stylesheet" href="units-first.css">
     <meta name="csrf-param" content="authenticity_token">
     <meta name="csrf-token" content="HgpVvajKcrouLhImhXiqwVTr5h9j0k/l1qOMP+HEhysatKOPC1iqxGcvUrjiY6S4jlpa23/r3QSxMTepH2Qhsw==">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -446,6 +449,25 @@
                     </svg>
                 </a>
             </div>
+            <form id="default_search_form" method="get">
+              <input type="hidden" name="neighborhood_id" id="neighborhood_id">
+              <div class="search-wrapper">
+                <input type="text" name="search_text" id="search_text" class="search-box" placeholder="Search..." autocomplete="off">
+                <i class="search-icon glyphicon glyphicon-search"></i>
+                <div class="autocomplete">
+                  <h5>Neighborhoods</h5>
+                  <ul class="neighborhood-result">
+                    <li><a data-neighborhood-id="0">Chicago (All)</a></li>
+                    <li><a data-neighborhood-id="river-north">River North</a></li>
+                    <li><a data-neighborhood-id="streeterville">Streeterville</a></li>
+                    <li><a data-neighborhood-id="gold-coast">Gold Coast</a></li>
+                    <li><a data-neighborhood-id="lincoln-park">Lincoln Park</a></li>
+                    <li><a data-neighborhood-id="lakeview">Lakeview</a></li>
+                    <li><a target="_blank" href="http://blog.aptamigo.com/neighborhood-guide">See More...</a></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
             <div class="links">
                 <div class="wrapper">
                     <li class="login">Log In</li>
@@ -537,523 +559,551 @@
         });
     </script>
     <div class="property" itemscope="" itemtype="http://schema.org/LocalBusiness">
-        <div class="cover" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/cover_photo/1232/d760ddbf-68e1-4b3c-a239-3406ef483a84.jpg" id="bg-image" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/cover_photo/1232/d760ddbf-68e1-4b3c-a239-3406ef483a84.jpg&quot;);"></div>
-        <div class="meta">
-            <div class="container">
+      <div class="cover" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/cover_photo/1232/d760ddbf-68e1-4b3c-a239-3406ef483a84.jpg" id="bg-image" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/cover_photo/1232/d760ddbf-68e1-4b3c-a239-3406ef483a84.jpg&quot;);"></div>
+      <div class="meta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wrapper">
+              <div class="info">
                 <div class="row">
-                    <div class="col-md-12 wrapper">
-                        <div class="contact">
-                            <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/1232/f33120d1-617a-481d-848b-4f47b1c739b1.jpg" id="profile_bg_image" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/1232/f33120d1-617a-481d-848b-4f47b1c739b1.jpg&quot;);"></div><a class="button" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">Contact</a>
+                  <div class="col-md-12">
+                    <div id="name-and-stars">
+                      <h1 itemprop="name">Optima Chicago Center Apartments</h1>
+                    </div>
+                    <div class="row">
+                      <div class="address-section col-md-3">
+                        <p class="address">200 E Illinois Street Chicago, IL</p>
+                        <a href="http://blog.aptamigo.com/streeterville/">
+                          <h2 class="like-body">Streeterville</h2>
+                        </a>
+                        <div class="overall_rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                          <div class="row">
+                            <div class="col-md-3 amenities">
+                              <meta content="5.0" itemprop="ratingValue">
+                              <meta content="5" itemprop="bestRating">
+                              <meta content="2" itemprop="reviewcount">
+                              <a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">
+                                <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                                  <input name="score" type="hidden" value="5" readonly="">
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-5 col-md-offset-1">
+                              <div class="rating_count">
+                                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">2 reviews</a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="col-md-5 meta-info-wrapper">
+                        <div class="meta-info">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <a class="units" id="units-icon-info"><i class="fa fa-home fa-lg"></i>
+                                <div>Units</div>
+                                <strong>3</strong>
+                              </a>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="price">
+                                <i class="fa fa-credit-card"></i>
+                                <div>Price Range</div>
+                                <strong>$3746-$3746</strong>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <a id="amenities-icon-info">
+                                <i class="fa fa-list"></i>
+                                <div>Amenities</div>
+                                <strong>13</strong>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-wrapper">
+        <div class="about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="spacer"></div>
+                <div class="description">
+                  <p dir="ltr" id="docs-internal-guid-c6f4efe7-e593-e620-413c-680aa8eda8bb" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews"><span style="color:#26374c;"><span style="font-size: 20px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Optima Chicago Center Reviews</span></span></a>
+                  </p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">200 E Illinois Street is a glass construction (2013), full-amenity rental building in southwest Streeterville.</span></span>
+                  </p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+
+                  <p dir="ltr" style="line-height:1.3800000000000001;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 16px; font-family: &#39;Helvetica Neue&#39;; font-weight: bold; font-style: italic; vertical-align: baseline; background-color: transparent;">What occupants love</span></span>
+                  </p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:14px;"><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;"><span style="color:#26374c;">Fun</span> </span><span style="font-family: &#39;Helvetica Neue&#39;; color: rgb(234, 182, 29); font-weight: bold; vertical-align: baseline; background-color: transparent;">pool/deck</span><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;"> <span style="color:#26374c;">scene. Solid shower pressure and internet/Wi-Fi connectivity.</span> </span><span style="font-family: &#39;Helvetica Neue&#39;; color: rgb(234, 182, 29); font-weight: bold; vertical-align: baseline; background-color: transparent;">Well maintained</span><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">. <span style="color:#26374c;">Expansive gym offering.</span></span>
+                    </span>
+                  </p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+
+                  <p dir="ltr" style="line-height:1.3800000000000001;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 16px; font-family: &#39;Helvetica Neue&#39;; font-weight: bold; font-style: italic; vertical-align: baseline; background-color: transparent;">What occupants love less</span></span>
+                  </p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:14px;"><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;"><span style="color:#26374c;">Some residents believe the surrounding neighborhood can get</span> </span><span style="font-family: &#39;Helvetica Neue&#39;; color: rgb(234, 182, 29); font-weight: bold; vertical-align: baseline; background-color: transparent;">touristy</span><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">. <span style="color:#26374c;">Moderate elevator wait times.</span></span>
+                    </span>
+                  </p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+
+                  <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Nearest Grocery Store: Whole Foods Market (2-minute walk)</span></span>
+                  </p>
+
+                  <p><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Nearest Convenience Store: 7-Eleven (6-minute walk)</span></span>
+                  </p>
+
+                  <p><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Nearest CTA: Red Line - Grand (9-minute walk)</span></span>
+                  </p>
+                </div>
+                <p class="section" id="amenities"><strong>Amenities</strong>
+                </p>
+                <ul>
+                  <li>
+                    <p>Dogs Allowed</p>
+                  </li>
+                  <li>
+                    <p>Cats Allowed</p>
+                  </li>
+                  <li>
+                    <p>Parking</p>
+                  </li>
+                  <li>
+                    <p>Indoor Pool</p>
+                  </li>
+                  <li>
+                    <p>Fitness Center</p>
+                  </li>
+                  <li>
+                    <p>In-Unit Laundry</p>
+                  </li>
+                  <li>
+                    <p>Business Center</p>
+                  </li>
+                  <li>
+                    <p>Storage Room</p>
+                  </li>
+                  <li>
+                    <p>Bike Room</p>
+                  </li>
+                  <li>
+                    <p>Doorman</p>
+                  </li>
+                  <li>
+                    <p>Common/Event Room</p>
+                  </li>
+                  <li>
+                    <p>Outdoor Space</p>
+                  </li>
+                  <li>
+                    <p>Communal Grill</p>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="col-md-5 card-track hidden-sm hidden-xs">
+                <div class="property-card spacer" style="top: 0px;">
+                  <div class="tour-schedule-form">
+                    <h4>Schedule a Tour</h4>
+                    <input type="text" name="tour_date" id="tour_date" class="date-picker half" placeholder="Date">
+                    <select name="tour_time" id="tour_time" class="half">
+                      <option value="9:00 AM">9:00 AM</option>
+                      <option value="9:30 AM">9:30 AM</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="10:30 AM">10:30 AM</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="11:30 AM">11:30 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="12:30 PM">12:30 PM</option>
+                      <option value="1:00 PM">1:00 PM</option>
+                      <option value="1:30 PM">1:30 PM</option>
+                      <option value="2:00 PM">2:00 PM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="3:00 PM">3:00 PM</option>
+                      <option value="3:30 PM">3:30 PM</option>
+                      <option value="4:00 PM">4:00 PM</option>
+                      <option value="4:30 PM">4:30 PM</option>
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="5:30 PM">5:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                    </select><a class="button" data-keyboard="true" data-toggle="modal" data-target="#tour-lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#"><h2>Request Tour</h2></a>
+                  </div>
+                  <div class="right rankings">
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="neighborhood_rank">
+                          <a class="dark-blue" href="https://www.aptamigo.com/IL/Chicago/Apartments/any-beds/streeterville">
+                            <strong><span class="yellow">#3 of 28</span></strong>Buildings in<strong class="neighborhood-name">Streeterville</strong></a>
+                        </div>
+                        <a class="dark-blue" href="https://www.aptamigo.com/IL/Chicago/Apartments">
+                          <div class="city_rank"><strong><span class="yellow">#28 of 382</span></strong>Buildings in <strong> Chicago</strong>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="stars col-xs-4">
+                        <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                          <input name="score" type="hidden" value="5" readonly="">
+                        </div>
+                        <div class="review-count">(2)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button contact" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#"><h2>Contact Optima Chicago Center</h2></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="available-units" id="units">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>3 Units Available</h4>
+                <div class="row">
+                  <div class="clearfix col-sm-12 col-md-7" id="unit_cards">
+                    <div class="unit col-md-7 col-sm-12 flippable">
+                      <div class="front">
+                        <div class="images slick-initialized slick-slider">
+                          <div class="slick-prev slick-arrow" style="display: block;"></div>
+                          <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" role="listbox" style="opacity: 1; width: 4288px; transform: translate3d(-536px, 0px, 0px);">
+                              <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg" data-slick-index="-1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg&quot;);" aria-hidden="true" tabindex="-1"></div>
+                              <div class="image slick-slide slick-current slick-active" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png" data-slick-index="0" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png&quot;);" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105122/a6049908-0c60-4d03-bba5-94bfc0ce0c1a.jpg" data-slick-index="1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105122/a6049908-0c60-4d03-bba5-94bfc0ce0c1a.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105132/7f76c8dd-2ef1-4061-b402-078660693654.jpg" data-slick-index="2" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105132/7f76c8dd-2ef1-4061-b402-078660693654.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105142/6143c823-46a9-4a1d-88ed-513b5febd186.jpg" data-slick-index="3" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105142/6143c823-46a9-4a1d-88ed-513b5febd186.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105152/c7cfb70a-fb31-4fb4-b9a7-829fd35913ea.jpg" data-slick-index="4" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105152/c7cfb70a-fb31-4fb4-b9a7-829fd35913ea.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg" data-slick-index="5" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05"></div>
+                              <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png" data-slick-index="6" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png&quot;);" aria-hidden="true" tabindex="-1"></div>
+                            </div>
+                          </div>
+                          <div class="slick-next slick-arrow" style="display: block;"></div>
+                        </div>
+                        <div class="more-info">More Info</div>
                         <div class="info">
-                            <div id="name-and-stars">
-                                <h1 itemprop="name">Optima Chicago Center Apartments</h1>
-                                <div class="overall_rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                                    <meta content="5.0" itemprop="ratingValue">
-                                    <meta content="5" itemprop="bestRating">
-                                    <meta content="2" itemprop="reviewcount">
-                                    <a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">
-                                        <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                                            <input name="score" type="hidden" value="5" readonly="">
-                                        </div>
-                                    </a>
-                                    <div class="rating_count"><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">2 reviews</a>
-                                    </div>
-                                </div>
-                            </div><a href="http://blog.aptamigo.com/streeterville/"><h2 class="like-body">Streeterville</h2></a>
-                            <div id="property_address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                                <meta content="60611" itemprop="postalCode">
-                                <p></p>
-                                <h2 class="like-span" itemprop="streetAddress">200 E Illinois St</h2><span>, </span>
-                                <h2 class="like-span" itemprop="addressLocality">Chicago</h2><span>, </span>
-                                <h2 class="like-span" itemprop="addressRegion">IL</h2>
-                                <p></p>
-                            </div>
-                            <p class="details first">Available Units <strong>3</strong>
-                            </p>
-                            <div class="divider hidden-xs"><i class="fa fa-circle"></i>
-                            </div>
-                            <p class="details">Price Range <strong>$3,746</strong>-<strong>$3,746</strong>
-                            </p>
-                            <div class="divider hidden-xs"><i class="fa fa-circle"></i>
-                            </div>
-                            <p class="details">Amenities <strong>13</strong>
-                            </p>
+                          <p class="description">Beautiful 3 bedroom. Request availability today!</p>
+                          <div class="detail">1 Bed</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">1.0 Bath</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">772 Sqft.</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">$3249/month</div>
                         </div>
-                        <div class="right">
-                            <div class="neighborhood_rank"><a class="dark-blue" href="https://www.aptamigo.com/IL/Chicago/Apartments/any-beds/streeterville"><strong><span class="yellow">#3 of 28</span></strong>Buildings in<strong>Streeterville</strong></a>
-                            </div>
-                            <a class="dark-blue" href="https://www.aptamigo.com/IL/Chicago/Apartments">
-                                <div class="city_rank"><strong><span class="yellow">#28 of 382</span></strong>Buildings in <strong> Chicago</strong>
-                                </div>
-                            </a>
+                      </div>
+                      <div class="back">
+                        <div class="scrollable">
+                          <h3><strong>$3249</strong>/month</h3>
+                          <p class="description"></p>
+                          <p>Beautiful 3 bedroom. Request availability today!</p>
+                          <p></p>
+                          <div class="amenities">
+                            <ul></ul>
+                          </div>
                         </div>
+                        <footer><a class="unit-lead-more-info button orange" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" data-id="70292" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">I'm Interested!</a>
+                        </footer>
+                        <div class="less-info">Flip It!</div>
+                      </div>
                     </div>
+                    <div class="unit col-md-7 col-sm-12 flippable">
+                      <div class="front">
+                        <div class="images slick-initialized slick-slider">
+                          <div class="slick-prev slick-arrow" style="display: block;"></div>
+                          <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" role="listbox" style="opacity: 1; width: 4288px; transform: translate3d(-536px, 0px, 0px);">
+                              <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg" data-slick-index="-1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg&quot;);" aria-hidden="true" tabindex="-1"></div>
+                              <div class="image slick-slide slick-current slick-active" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png" data-slick-index="0" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png&quot;);" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide10"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105182/6b53fffc-60ea-4737-868b-1e7bb8ccd32c.jpg" data-slick-index="1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105182/6b53fffc-60ea-4737-868b-1e7bb8ccd32c.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide11"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105192/8d88d4e4-c082-48cd-9ec7-00c248bf36cb.jpg" data-slick-index="2" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105192/8d88d4e4-c082-48cd-9ec7-00c248bf36cb.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide12"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105202/2b590dd2-5d25-41d9-b074-288abdbaf00d.jpg" data-slick-index="3" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105202/2b590dd2-5d25-41d9-b074-288abdbaf00d.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide13"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105212/5a100ab8-f34a-49d2-afb6-14fcee358f8a.jpg" data-slick-index="4" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105212/5a100ab8-f34a-49d2-afb6-14fcee358f8a.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide14"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg" data-slick-index="5" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide15"></div>
+                              <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png" data-slick-index="6" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png&quot;);" aria-hidden="true" tabindex="-1"></div>
+                            </div>
+                          </div>
+                          <div class="slick-next slick-arrow" style="display: block;"></div>
+                        </div>
+                        <div class="more-info">More Info</div>
+                        <div class="info">
+                          <p class="description">Beautiful 2 bedroom apartment available NOW! Reach out today.</p>
+                          <div class="detail">2 Beds</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">2.0 Baths</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">1217 Sqft.</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">$5033/month</div>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="scrollable">
+                          <h3><strong>$5033</strong>/month</h3>
+                          <p class="description"></p>
+                          <p>Beautiful 2 bedroom apartment available NOW! Reach out today.</p>
+                          <p></p>
+                          <div class="amenities">
+                            <ul></ul>
+                          </div>
+                        </div>
+                        <footer><a class="unit-lead-more-info button orange" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" data-id="70302" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">I'm Interested!</a>
+                        </footer>
+                        <div class="less-info">Flip It!</div>
+                      </div>
+                    </div>
+                    <div class="unit col-md-7 col-sm-12 flippable">
+                      <div class="front">
+                        <div class="images slick-initialized slick-slider">
+                          <div class="slick-prev slick-arrow" style="display: block;"></div>
+                          <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" role="listbox" style="opacity: 1; width: 4288px; transform: translate3d(-536px, 0px, 0px);">
+                              <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg" data-slick-index="-1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg&quot;);" aria-hidden="true" tabindex="-1"></div>
+                              <div class="image slick-slide slick-current slick-active" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png" data-slick-index="0" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png&quot;);" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide20"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105242/62bfbfb9-f8f6-4bf9-aaf0-4959f22bf32b.jpg" data-slick-index="1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105242/62bfbfb9-f8f6-4bf9-aaf0-4959f22bf32b.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide21"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105252/be59958e-6ce1-42d0-9c72-1c88143006f0.jpg" data-slick-index="2" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105252/be59958e-6ce1-42d0-9c72-1c88143006f0.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide22"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105262/1e0773d2-09e7-487e-8b6f-54a0706642d2.jpg" data-slick-index="3" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105262/1e0773d2-09e7-487e-8b6f-54a0706642d2.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide23"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105272/a322dcca-b368-4327-aa60-1aed8fd34bea.jpg" data-slick-index="4" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105272/a322dcca-b368-4327-aa60-1aed8fd34bea.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide24"></div>
+                              <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg" data-slick-index="5" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide25"></div>
+                              <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png" data-slick-index="6" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png&quot;);" aria-hidden="true" tabindex="-1"></div>
+                            </div>
+                          </div>
+                          <div class="slick-next slick-arrow" style="display: block;"></div>
+                        </div>
+                        <div class="more-info">More Info</div>
+                        <div class="info">
+                          <p class="description">Beautiful 3 bedroom available NOW! Reach out today.</p>
+                          <div class="detail">3 Beds</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">3.0 Baths</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">1564 Sqft.</div>
+                          <div class="divider"><i class="fa fa-circle"></i>
+                          </div>
+                          <div class="detail">$5897/month</div>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="scrollable">
+                          <h3><strong>$5897</strong>/month</h3>
+                          <p class="description"></p>
+                          <p>Beautiful 3 bedroom available NOW! Reach out today.</p>
+                          <p></p>
+                          <div class="amenities">
+                            <ul></ul>
+                          </div>
+                        </div>
+                        <footer><a class="unit-lead-more-info button orange" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" data-id="70322" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">I'm Interested!</a>
+                        </footer>
+                        <div class="less-info">Flip It!</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="pagination">
+                  <p class="pages">Displaying all 3 Units</p>
+                  <div class="page-links"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-wrapper">
-            <div class="about" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="spacer"></div>
-                            <div class="description">
-                                <p dir="ltr" id="docs-internal-guid-c6f4efe7-e593-e620-413c-680aa8eda8bb" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews"><span style="color:#26374c;"><span style="font-size: 20px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Optima Chicago Center Reviews</span></span></a>
-                                </p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">200 E Illinois Street is a glass construction (2013), full-amenity rental building in southwest Streeterville.</span></span>
-                                </p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-
-                                <p dir="ltr" style="line-height:1.3800000000000001;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 16px; font-family: &#39;Helvetica Neue&#39;; font-weight: bold; font-style: italic; vertical-align: baseline; background-color: transparent;">What occupants love</span></span>
-                                </p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:14px;"><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;"><span style="color:#26374c;">Fun</span> </span><span style="font-family: &#39;Helvetica Neue&#39;; color: rgb(234, 182, 29); font-weight: bold; vertical-align: baseline; background-color: transparent;">pool/deck</span><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;"> <span style="color:#26374c;">scene. Solid shower pressure and internet/Wi-Fi connectivity.</span> </span><span style="font-family: &#39;Helvetica Neue&#39;; color: rgb(234, 182, 29); font-weight: bold; vertical-align: baseline; background-color: transparent;">Well maintained</span><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">. <span style="color:#26374c;">Expansive gym offering.</span></span>
-                                    </span>
-                                </p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-
-                                <p dir="ltr" style="line-height:1.3800000000000001;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 16px; font-family: &#39;Helvetica Neue&#39;; font-weight: bold; font-style: italic; vertical-align: baseline; background-color: transparent;">What occupants love less</span></span>
-                                </p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:14px;"><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;"><span style="color:#26374c;">Some residents believe the surrounding neighborhood can get</span> </span><span style="font-family: &#39;Helvetica Neue&#39;; color: rgb(234, 182, 29); font-weight: bold; vertical-align: baseline; background-color: transparent;">touristy</span><span style="font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">. <span style="color:#26374c;">Moderate elevator wait times.</span></span>
-                                    </span>
-                                </p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-
-                                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Nearest Grocery Store: Whole Foods Market (2-minute walk)</span></span>
-                                </p>
-
-                                <p><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Nearest Convenience Store: 7-Eleven (6-minute walk)</span></span>
-                                </p>
-
-                                <p><span style="color:#26374c;"><span style="font-size: 14.6666666666667px; font-family: &#39;Helvetica Neue&#39;; vertical-align: baseline; background-color: transparent;">Nearest CTA: Red Line - Grand (9-minute walk)</span></span>
-                                </p>
-                            </div>
-                            <p class="section" id="amenities"><strong>Amenities</strong>
-                            </p>
-                            <ul>
-                                <li>
-                                    <p>Dogs Allowed</p>
-                                </li>
-                                <li>
-                                    <p>Cats Allowed</p>
-                                </li>
-                                <li>
-                                    <p>Parking</p>
-                                </li>
-                                <li>
-                                    <p>Indoor Pool</p>
-                                </li>
-                                <li>
-                                    <p>Fitness Center</p>
-                                </li>
-                                <li>
-                                    <p>In-Unit Laundry</p>
-                                </li>
-                                <li>
-                                    <p>Business Center</p>
-                                </li>
-                                <li>
-                                    <p>Storage Room</p>
-                                </li>
-                                <li>
-                                    <p>Bike Room</p>
-                                </li>
-                                <li>
-                                    <p>Doorman</p>
-                                </li>
-                                <li>
-                                    <p>Common/Event Room</p>
-                                </li>
-                                <li>
-                                    <p>Outdoor Space</p>
-                                </li>
-                                <li>
-                                    <p>Communal Grill</p>
-                                </li>
-                            </ul>
-                            <div class="reviews">
-                                <div>
-                                    <h4>Reviews</h4>
-                                </div>
-                                <div class="averages">
-                                    <div class="average">
-                                        <p class="bold">Overall</p>
-                                        <div class="stars">
-                                            <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                                                <input name="score" type="hidden" value="5" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="average">
-                                        <p>Neighborhood/Community</p>
-                                        <div class="stars">
-                                            <div class="rating_stars" data-rating="4.0" title="Very Good"><i data-alt="1" class="star-on-png" title="Very Good"></i><i data-alt="2" class="star-on-png" title="Very Good"></i><i data-alt="3" class="star-on-png" title="Very Good"></i><i data-alt="4" class="star-on-png" title="Very Good"></i><i data-alt="5" class="star-off-png" title="Very Good"></i>
-                                                <input name="score" type="hidden" value="4" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="average">
-                                        <p>Doormen/Security</p>
-                                        <div class="stars">
-                                            <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                                                <input name="score" type="hidden" value="5" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="average">
-                                        <p>In-Unit Experience</p>
-                                        <div class="stars">
-                                            <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                                                <input name="score" type="hidden" value="5" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="average">
-                                        <p>Property Mangement</p>
-                                        <div class="stars">
-                                            <div class="rating_stars" data-rating="3.0" title="Ok"><i data-alt="1" class="star-on-png" title="Ok"></i><i data-alt="2" class="star-on-png" title="Ok"></i><i data-alt="3" class="star-on-png" title="Ok"></i><i data-alt="4" class="star-off-png" title="Ok"></i><i data-alt="5" class="star-off-png" title="Ok"></i>
-                                                <input name="score" type="hidden" value="3" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="average">
-                                        <p>Amenities</p>
-                                        <div class="stars">
-                                            <div class="rating_stars" data-rating="4.5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-half-png" title="Excellent"></i>
-                                                <input name="score" type="hidden" value="4.5" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-list">
-                                    <div class="review">
-                                        <div class="avatar"><img src="./../assets/temp-d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d.png" alt="Temp d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d">
-                                        </div>
-                                        <div class="content">
-                                            <div class="name">Rohit D.</div>
-                                            <div class="stars">
-                                                <div class="rating_stars" data-rating="5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                                                    <input name="score" type="hidden" value="5" readonly="">
-                                                </div>
-                                            </div>
-                                            <div class="date">Jul 30</div>
-                                            <div>
-                                                <p class="text">The building agents are a bit tough to deal with, but the building itself is wonderful as are the doormen. </p>
-                                            </div><a class="button detailed-review" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">Detailed Review</a>
-                                        </div>
-                                    </div><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">+ More Reviews</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 card-track hidden-sm hidden-xs">
-                            <div class="property-card spacer" style="top: 0px;">
-                                <h3>Optima Chicago Center</h3>
-                                <div class="stars">
-                                    <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
-                                        <input name="score" type="hidden" value="5" readonly="">
-                                    </div>
-                                    <div class="review-count">(2)</div>
-                                </div>
-                                <div class="info">
-                                    <p>Streeterville</p>
-                                    <p>Chicago, IL</p>
-                                </div>
-                                <div class="meta"><a class="units" id="units-icon-info"><i class="fa fa-home fa-lg"></i><div>Units</div><strong>3</strong></a>
-                                    <div class="price"><i class="fa fa-credit-card"></i>
-                                        <div>Price Range</div><strong>$3746-$3746</strong>
-                                    </div><a class="amenities" id="amenities-icon-info"><i class="fa fa-list"></i><div>Amenities</div><strong>13</strong></a>
-                                </div><a class="button" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#"><h2>Contact Optima Chicago Center</h2></a>
-                                <h4>Schedule a Tour</h4>
-                                <input type="text" name="tour_date" id="tour_date" class="date-picker half" placeholder="Date">
-                                <select name="tour_time" id="tour_time" class="half">
-                                    <option value="9:00 AM">9:00 AM</option>
-                                    <option value="9:30 AM">9:30 AM</option>
-                                    <option value="10:00 AM">10:00 AM</option>
-                                    <option value="10:30 AM">10:30 AM</option>
-                                    <option value="11:00 AM">11:00 AM</option>
-                                    <option value="11:30 AM">11:30 AM</option>
-                                    <option value="12:00 PM">12:00 PM</option>
-                                    <option value="12:30 PM">12:30 PM</option>
-                                    <option value="1:00 PM">1:00 PM</option>
-                                    <option value="1:30 PM">1:30 PM</option>
-                                    <option value="2:00 PM">2:00 PM</option>
-                                    <option value="2:30 PM">2:30 PM</option>
-                                    <option value="3:00 PM">3:00 PM</option>
-                                    <option value="3:30 PM">3:30 PM</option>
-                                    <option value="4:00 PM">4:00 PM</option>
-                                    <option value="4:30 PM">4:30 PM</option>
-                                    <option value="5:00 PM">5:00 PM</option>
-                                    <option value="5:30 PM">5:30 PM</option>
-                                    <option value="6:00 PM">6:00 PM</option>
-                                </select><a class="button" data-keyboard="true" data-toggle="modal" data-target="#tour-lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#"><h2>Request Tour</h2></a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="reviews-section">
+                <div>
+                  <h4>Reviews</h4>
                 </div>
-            </div>
-            <div class="available-units" id="units">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4>3 Units Available</h4>
-                            <div class="row">
-                                <div class="clearfix col-sm-12 col-md-7" id="unit_cards">
-                                    <div class="unit col-md-7 col-sm-12 flippable">
-                                        <div class="front">
-                                            <div class="images slick-initialized slick-slider">
-                                                <div class="slick-prev slick-arrow" style="display: block;"></div>
-                                                <div aria-live="polite" class="slick-list draggable">
-                                                    <div class="slick-track" role="listbox" style="opacity: 1; width: 4288px; transform: translate3d(-536px, 0px, 0px);">
-                                                        <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg" data-slick-index="-1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg&quot;);" aria-hidden="true" tabindex="-1"></div>
-                                                        <div class="image slick-slide slick-current slick-active" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png" data-slick-index="0" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png&quot;);" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105122/a6049908-0c60-4d03-bba5-94bfc0ce0c1a.jpg" data-slick-index="1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105122/a6049908-0c60-4d03-bba5-94bfc0ce0c1a.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105132/7f76c8dd-2ef1-4061-b402-078660693654.jpg" data-slick-index="2" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105132/7f76c8dd-2ef1-4061-b402-078660693654.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105142/6143c823-46a9-4a1d-88ed-513b5febd186.jpg" data-slick-index="3" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105142/6143c823-46a9-4a1d-88ed-513b5febd186.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105152/c7cfb70a-fb31-4fb4-b9a7-829fd35913ea.jpg" data-slick-index="4" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105152/c7cfb70a-fb31-4fb4-b9a7-829fd35913ea.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg" data-slick-index="5" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105162/a20922a6-2e2d-4692-9341-735d41225ad4.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05"></div>
-                                                        <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png" data-slick-index="6" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105112/7f3d3191-c3d9-4911-bfbd-24e3dd2425cd.png&quot;);" aria-hidden="true" tabindex="-1"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="slick-next slick-arrow" style="display: block;"></div>
-                                            </div>
-                                            <div class="more-info">More Info</div>
-                                            <div class="info">
-                                                <p class="description">Beautiful 3 bedroom. Request availability today!</p>
-                                                <div class="detail">1 Bed</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">1.0 Bath</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">772 Sqft.</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">$3249/month</div>
-                                            </div>
-                                        </div>
-                                        <div class="back">
-                                            <div class="scrollable">
-                                                <h3><strong>$3249</strong>/month</h3>
-                                                <p class="description"></p>
-                                                <p>Beautiful 3 bedroom. Request availability today!</p>
-                                                <p></p>
-                                                <div class="amenities">
-                                                    <ul></ul>
-                                                </div>
-                                            </div>
-                                            <footer><a class="unit-lead-more-info button orange" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" data-id="70292" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">I'm Interested!</a>
-                                            </footer>
-                                            <div class="less-info">Flip It!</div>
-                                        </div>
-                                    </div>
-                                    <div class="unit col-md-7 col-sm-12 flippable">
-                                        <div class="front">
-                                            <div class="images slick-initialized slick-slider">
-                                                <div class="slick-prev slick-arrow" style="display: block;"></div>
-                                                <div aria-live="polite" class="slick-list draggable">
-                                                    <div class="slick-track" role="listbox" style="opacity: 1; width: 4288px; transform: translate3d(-536px, 0px, 0px);">
-                                                        <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg" data-slick-index="-1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg&quot;);" aria-hidden="true" tabindex="-1"></div>
-                                                        <div class="image slick-slide slick-current slick-active" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png" data-slick-index="0" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png&quot;);" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide10"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105182/6b53fffc-60ea-4737-868b-1e7bb8ccd32c.jpg" data-slick-index="1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105182/6b53fffc-60ea-4737-868b-1e7bb8ccd32c.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide11"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105192/8d88d4e4-c082-48cd-9ec7-00c248bf36cb.jpg" data-slick-index="2" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105192/8d88d4e4-c082-48cd-9ec7-00c248bf36cb.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide12"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105202/2b590dd2-5d25-41d9-b074-288abdbaf00d.jpg" data-slick-index="3" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105202/2b590dd2-5d25-41d9-b074-288abdbaf00d.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide13"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105212/5a100ab8-f34a-49d2-afb6-14fcee358f8a.jpg" data-slick-index="4" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105212/5a100ab8-f34a-49d2-afb6-14fcee358f8a.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide14"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg" data-slick-index="5" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105222/5f3468b6-f3a6-4859-8563-80f0b19879d3.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide15"></div>
-                                                        <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png" data-slick-index="6" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105172/61bf61dc-ba04-44e2-bdd6-9bcb3eb5e878.png&quot;);" aria-hidden="true" tabindex="-1"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="slick-next slick-arrow" style="display: block;"></div>
-                                            </div>
-                                            <div class="more-info">More Info</div>
-                                            <div class="info">
-                                                <p class="description">Beautiful 2 bedroom apartment available NOW! Reach out today.</p>
-                                                <div class="detail">2 Beds</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">2.0 Baths</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">1217 Sqft.</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">$5033/month</div>
-                                            </div>
-                                        </div>
-                                        <div class="back">
-                                            <div class="scrollable">
-                                                <h3><strong>$5033</strong>/month</h3>
-                                                <p class="description"></p>
-                                                <p>Beautiful 2 bedroom apartment available NOW! Reach out today.</p>
-                                                <p></p>
-                                                <div class="amenities">
-                                                    <ul></ul>
-                                                </div>
-                                            </div>
-                                            <footer><a class="unit-lead-more-info button orange" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" data-id="70302" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">I'm Interested!</a>
-                                            </footer>
-                                            <div class="less-info">Flip It!</div>
-                                        </div>
-                                    </div>
-                                    <div class="unit col-md-7 col-sm-12 flippable">
-                                        <div class="front">
-                                            <div class="images slick-initialized slick-slider">
-                                                <div class="slick-prev slick-arrow" style="display: block;"></div>
-                                                <div aria-live="polite" class="slick-list draggable">
-                                                    <div class="slick-track" role="listbox" style="opacity: 1; width: 4288px; transform: translate3d(-536px, 0px, 0px);">
-                                                        <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg" data-slick-index="-1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg&quot;);" aria-hidden="true" tabindex="-1"></div>
-                                                        <div class="image slick-slide slick-current slick-active" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png" data-slick-index="0" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png&quot;);" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide20"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105242/62bfbfb9-f8f6-4bf9-aaf0-4959f22bf32b.jpg" data-slick-index="1" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105242/62bfbfb9-f8f6-4bf9-aaf0-4959f22bf32b.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide21"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105252/be59958e-6ce1-42d0-9c72-1c88143006f0.jpg" data-slick-index="2" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105252/be59958e-6ce1-42d0-9c72-1c88143006f0.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide22"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105262/1e0773d2-09e7-487e-8b6f-54a0706642d2.jpg" data-slick-index="3" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105262/1e0773d2-09e7-487e-8b6f-54a0706642d2.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide23"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105272/a322dcca-b368-4327-aa60-1aed8fd34bea.jpg" data-slick-index="4" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105272/a322dcca-b368-4327-aa60-1aed8fd34bea.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide24"></div>
-                                                        <div class="image slick-slide" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg" data-slick-index="5" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105282/31372092-4a31-4049-a5aa-3fa91ecf8bd7.jpg&quot;);" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide25"></div>
-                                                        <div class="image slick-slide slick-cloned" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png" data-slick-index="6" style="width: 536px; background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/image/uploaded_photo/105232/732ef73d-cd13-42d8-80db-0baeb6ef6b53.png&quot;);" aria-hidden="true" tabindex="-1"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="slick-next slick-arrow" style="display: block;"></div>
-                                            </div>
-                                            <div class="more-info">More Info</div>
-                                            <div class="info">
-                                                <p class="description">Beautiful 3 bedroom available NOW! Reach out today.</p>
-                                                <div class="detail">3 Beds</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">3.0 Baths</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">1564 Sqft.</div>
-                                                <div class="divider"><i class="fa fa-circle"></i>
-                                                </div>
-                                                <div class="detail">$5897/month</div>
-                                            </div>
-                                        </div>
-                                        <div class="back">
-                                            <div class="scrollable">
-                                                <h3><strong>$5897</strong>/month</h3>
-                                                <p class="description"></p>
-                                                <p>Beautiful 3 bedroom available NOW! Reach out today.</p>
-                                                <p></p>
-                                                <div class="amenities">
-                                                    <ul></ul>
-                                                </div>
-                                            </div>
-                                            <footer><a class="unit-lead-more-info button orange" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" data-id="70322" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">I'm Interested!</a>
-                                            </footer>
-                                            <div class="less-info">Flip It!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pagination">
-                                <p class="pages">Displaying all 3 Units</p>
-                                <div class="page-links"></div>
-                            </div>
-                        </div>
+                <div class="averages">
+                  <div class="average">
+                    <p class="bold">Overall</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="5" readonly="">
+                      </div>
                     </div>
+                  </div>
+                  <div class="average">
+                    <p>Neighborhood/Community</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="4.0" title="Very Good"><i data-alt="1" class="star-on-png" title="Very Good"></i><i data-alt="2" class="star-on-png" title="Very Good"></i><i data-alt="3" class="star-on-png" title="Very Good"></i><i data-alt="4" class="star-on-png" title="Very Good"></i><i data-alt="5" class="star-off-png" title="Very Good"></i>
+                        <input name="score" type="hidden" value="4" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>Doormen/Security</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="5" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>In-Unit Experience</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="5" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>Property Mangement</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="3.0" title="Ok"><i data-alt="1" class="star-on-png" title="Ok"></i><i data-alt="2" class="star-on-png" title="Ok"></i><i data-alt="3" class="star-on-png" title="Ok"></i><i data-alt="4" class="star-off-png" title="Ok"></i><i data-alt="5" class="star-off-png" title="Ok"></i>
+                        <input name="score" type="hidden" value="3" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <p>Amenities</p>
+                    <div class="stars">
+                      <div class="rating_stars" data-rating="4.5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-half-png" title="Excellent"></i>
+                        <input name="score" type="hidden" value="4.5" readonly="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="review-list">
+                  <div class="review">
+                    <div class="avatar"><img src="./../assets/temp-d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d.png" alt="Temp d176c8f016f8a9755d14294e041e5293383e26bb8f78cbd57e2ae70c3b24543d">
+                    </div>
+                    <div class="content">
+                      <div class="name">Rohit D.</div>
+                      <div class="stars">
+                        <div class="rating_stars" data-rating="5" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i>
+                          <input name="score" type="hidden" value="5" readonly="">
+                        </div>
+                      </div>
+                      <div class="date">Jul 30</div>
+                      <div>
+                        <p class="text">The building agents are a bit tough to deal with, but the building itself is wonderful as are the doormen. </p>
+                      </div><a class="button detailed-review" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">Detailed Review</a>
+                    </div>
+                  </div><a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">+ More Reviews</a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="top-apartments">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Other Nearby Buildings</h4>
-                        <div class="apartments row">
-                            <div class="apartment col-md-4">
-                                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/860-880-n-lake-shore">
-                                    <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg&quot;);"></div>
-                                    <h4 class="address">860 / 880 N Lake Shore<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
-                                </a>
-                            </div>
-                            <div class="apartment col-md-4">
-                                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/river-east-center">
-                                    <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg&quot;);"></div>
-                                    <h4 class="address">River East Center<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(2)</div></div></h4>
-                                </a>
-                            </div>
-                            <div class="apartment col-md-4">
-                                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/the-esplanade-apts">
-                                    <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg&quot;);"></div>
-                                    <div class="units">1 Unit
-                                        <br><span class="tiny">Available</span>
-                                    </div>
-                                    <h4 class="address">The Esplanade Apts.<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="top-apartments">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Other Nearby Buildings</h4>
+            <div class="apartments row">
+              <div class="apartment col-md-4">
+                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/860-880-n-lake-shore">
+                  <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3882/dd0f977f-570f-483c-ace2-e857e1f53c79.jpg&quot;);"></div>
+                  <h4 class="address">860 / 880 N Lake Shore<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
+                </a>
+              </div>
+              <div class="apartment col-md-4">
+                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/river-east-center">
+                  <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/2862/6730d3d2-54a4-4c0d-9dde-bd92deda8007.jpg&quot;);"></div>
+                  <h4 class="address">River East Center<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(2)</div></div></h4>
+                </a>
+              </div>
+              <div class="apartment col-md-4">
+                <a href="https://www.aptamigo.com/IL/Chicago/Apartment/the-esplanade-apts">
+                  <div class="image" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/profile_photo/3892/75ad8e80-3b47-4b6f-b9c7-60d4cc7fde5a.jpg&quot;);"></div>
+                  <div class="units">1 Unit
+                    <br><span class="tiny">Available</span>
+                  </div>
+                  <h4 class="address">The Esplanade Apts.<div class="stars"><div class="rating_stars" data-rating="5.0" title="Excellent"><i data-alt="1" class="star-on-png" title="Excellent"></i><i data-alt="2" class="star-on-png" title="Excellent"></i><i data-alt="3" class="star-on-png" title="Excellent"></i><i data-alt="4" class="star-on-png" title="Excellent"></i><i data-alt="5" class="star-on-png" title="Excellent"></i><input name="score" type="hidden" value="5" readonly=""></div><div class="review-count">(1)</div></div></h4>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-        <div id="mobile-buttons">
+      </div>
+    </div>
+          <div id="mobile-buttons">
             <a class="button" data-keyboard="true" data-toggle="modal" data-target="#lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">
-                <div>Contact Property</div>
+              <div>Contact Property</div>
             </a>
             <a class="button yellow" data-keyboard="true" data-toggle="modal" data-target="#tour-lead-modal" href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center#">
-                <div>Request Tour</div>
+              <div>Request Tour</div>
             </a>
-        </div>
-    </div>
-    <div class="modal fade" id="lead-modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
+          </div>
+          <div class="modal fade" id="lead-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
                 <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="header">Contact Information
-                                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-                                <div class="info">
-                                    <p>A representative will get back to you within 1 business day.</p>
-                                </div>
-                                <div class="error"></div>
-                                <div class="success"></div>
-                                <form class="new_lead" id="new_lead" action="https://www.aptamigo.com/properties/optima-chicago-center/leads" accept-charset="UTF-8" data-remote="true" method="post">
-                                    <input name="utf8" type="hidden" value="✓">
-                                    <input type="hidden" name="lead[unit_id]" id="lead_unit_id">
-                                    <div class="field">
-                                        <input placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name">
-                                    </div>
-                                    <div class="field">
-                                        <input placeholder="Email address *" value="" type="text" name="lead[email]" id="lead_email">
-                                    </div>
-                                    <div class="field">
-                                        <input placeholder="Phone number" type="text" name="lead[phone]" id="lead_phone">
-                                    </div>
-                                    <div class="field half">
-                                        <select name="lead[bed_count_desired]" id="lead_bed_count_desired">
-                                            <option disabled="" default="" selected="">Beds *</option>
-                                            <option value="0">Studio</option>
-                                            <option value="1">1+</option>
-                                            <option value="2">2+</option>
-                                            <option value="3">3+</option>
-                                            <option value="4">4+</option>
-                                            <option value="5">5+</option>
-                                        </select>
-                                    </div>
-                                    <div class="field half clear-fix">
-                                        <input placeholder="Move-in date *" readonly="readonly" class="date-picker" type="text" name="lead[move_in_date]" id="lead_move_in_date">
-                                    </div>
-                                    <div class="field">
-                                        <textarea placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
-                                    </div>
-                                    <input type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting">
-                                </form>
-                            </div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="header">Contact Information
+                          <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span>
+                          </button>
                         </div>
+                        <div class="info">
+                          <p>A representative will get back to you within 1 business day.</p>
+                        </div>
+                        <div class="error"></div>
+                        <div class="success"></div>
+                        <form class="new_lead" id="new_lead" action="https://www.aptamigo.com/properties/optima-chicago-center/leads" accept-charset="UTF-8" data-remote="true" method="post">
+                          <input name="utf8" type="hidden" value="✓">
+                          <input type="hidden" name="lead[unit_id]" id="lead_unit_id">
+                          <div class="field">
+                            <input placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name">
+                          </div>
+                          <div class="field">
+                            <input placeholder="Email address *" value="" type="text" name="lead[email]" id="lead_email">
+                          </div>
+                          <div class="field">
+                            <input placeholder="Phone number" type="text" name="lead[phone]" id="lead_phone">
+                          </div>
+                          <div class="field half">
+                            <select name="lead[bed_count_desired]" id="lead_bed_count_desired">
+                              <option disabled="" default="" selected="">Beds *</option>
+                              <option value="0">Studio</option>
+                              <option value="1">1+</option>
+                              <option value="2">2+</option>
+                              <option value="3">3+</option>
+                              <option value="4">4+</option>
+                              <option value="5">5+</option>
+                            </select>
+                          </div>
+                          <div class="field half clear-fix">
+                            <input placeholder="Move-in date *" readonly="readonly" class="date-picker" type="text" name="lead[move_in_date]" id="lead_move_in_date">
+                          </div>
+                          <div class="field">
+                            <textarea placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
+                          </div>
+                          <input type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting">
+                        </form>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
     <script type="text/javascript">
         $(document).ready(function() {
             $("#lead-modal").on('show.bs.modal', function() {
