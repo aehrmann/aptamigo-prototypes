@@ -8,6 +8,10 @@ html {
   height: 69vh;
 }
 
+.property .meta .wrapper {
+  margin-top: 20px;
+}
+
 /* Information overview ======================================== */
 .property .meta .info {
   display: block;
@@ -29,6 +33,7 @@ html {
 }
 
 /* Floating tour/contact form ======================================== */
+
 .rankings a.dark-blue {
   color: #26374c;
 }
@@ -58,6 +63,7 @@ html {
 }
 
 /* About description section ======================================== */
+
 .about .row {
   position: relative;
 }
@@ -121,13 +127,7 @@ form#default_search_form .search-icon {
   right: 5%;
 }
 
-
-/* Hero image ======================================== */
-.property .meta .wrapper {
-  margin-top: 20px;
-}
-
-/* Nav search bar ========================================*/
+/* Mobile menu ========================================*/
 .navicon a {
   color: #fff;
   line-height: 85px;
@@ -199,6 +199,11 @@ form#default_search_form .search-icon {
 
   .property .meta-info .icon {
     margin-bottom: 1em;
+  }
+
+  /* hide login link */
+  #login {
+    display: none;
   }
 
 }
