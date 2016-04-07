@@ -123,3 +123,29 @@ form#default_search_form .search-icon {
   right: 8%;
   top: 25%;
 }
+
+
+/* ======================================================*/
+/* Mobile Styles ========================================*/
+/* ======================================================*/
+
+@media screen and (max-width: 767px) {
+  /* Hero image ======================================== */
+  .property .cover {
+    height: 380px;
+  }
+
+  .property .meta .wrapper {
+    margin-top: 20px;
+  }
+
+  /* Nav search bar ========================================*/
+  form#default_search_form,
+  nav.main .links {
+    display: none;
+  }
+
+  .navicon {
+    color: #fff;
+  }
+}
