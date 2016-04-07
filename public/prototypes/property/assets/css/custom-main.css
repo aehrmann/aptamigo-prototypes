@@ -161,8 +161,18 @@ form#default_search_form .search-icon {
   justify-content: space-around;
 }
 
+.mobile-menu nav ul li.login-signup a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 .mobile-menu nav ul li.search {
-  width: 45%;
+  margin-right: auto;
+}
+
+.mobile-menu nav ul li.search a {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .mobile-menu nav ul li.mobile-login {
