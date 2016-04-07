@@ -3,7 +3,6 @@
     var closed = true;
 
     $('.navicon').on('click', function() {
-      console.log('clicked: ' + closed);
       if(closed) {
         $('.mobile-menu').slideDown(200);
       } else {

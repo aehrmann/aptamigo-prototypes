@@ -105,7 +105,6 @@ form#default_search_form {
   display: inline-block;
   margin-left: 5rem;
   margin-top: 2.5rem;
-  width: 8%;
 }
 
 form#default_search_form input[type="text"] {
@@ -120,8 +119,8 @@ form#default_search_form input[type="text"] {
 form#default_search_form .search-icon {
   color: #333;
   position: absolute;
-  right: 8%;
   top: 25%;
+  right: 5%;
 }
 
 
