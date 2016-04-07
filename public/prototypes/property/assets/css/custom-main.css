@@ -1,12 +1,14 @@
 /* Hero image ======================================== */
+body,
+html {
+  height: 100%;
+}
+
 .property .cover {
-  height: 530px;
+  height: 69vh;
 }
 
 /* Information overview ======================================== */
-.property .meta .wrapper {
-  height: 180px;
-}
 .property .meta .info {
   display: block;
   margin-left: 0;
@@ -19,6 +21,7 @@
 .property .meta-info .row {
   text-align: center;
 }
+
 
 .property .meta .info h2.like-body,
 .property .meta .info p {
@@ -33,10 +36,6 @@
 .rankings .yellow {
   color: #eab61d;
   margin-right: 0.5rem;
-}
-
-.address-section {
-  padding-right: 4rem;
 }
 
 .address-section .address {
@@ -66,7 +65,7 @@
 .about .card-track {
   position: absolute;
   right: 0;
-  top: -250px;
+  top: -270px;
 }
 
 .about .property-card a {
@@ -87,7 +86,6 @@
 }
 
 .property .info .meta-info-wrapper {
-  margin-left: -5rem;
   position: relative;
 }
 
@@ -130,7 +128,7 @@ form#default_search_form .search-icon {
 }
 
 /* Nav search bar ========================================*/
-.navicon {
+.navicon a {
   color: #fff;
   line-height: 85px;
 }
@@ -167,11 +165,11 @@ form#default_search_form .search-icon {
   width: 45%;
 }
 
-.mobile-menu nav ul li.login {
+.mobile-menu nav ul li.mobile-login {
   flex: 2;
 }
 
-.mobile-menu nav ul li.login a {
+.mobile-menu nav ul li.mobile-login a {
   color: #fff;
   display: block;
   font-size: 14px;
@@ -184,8 +182,23 @@ form#default_search_form .search-icon {
   max-width: 100%;
 }
 
-@media and screen (max-width: 768px) {
-  nav.main .links .login {
+.property .meta .wrapper {
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* Hero image */
+  .property .cover {
+    height: 62vh;
+  }
+
+  /* hide normal nav */
+  nav.main .wrapper .links {
     display: none;
   }
+
+  .property .meta-info .icon {
+    margin-bottom: 1em;
+  }
+
 }

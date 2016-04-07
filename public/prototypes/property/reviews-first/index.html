@@ -717,14 +717,14 @@
             </div>
           </div>
         </form>
-        <div class="links hidden-sm hiddem-md">
+        <div class="links hidden-sm">
           <div class="wrapper">
             <li class="login">Log In</li>
             <li class="button signup">Sign Up</li>
           </div>
         </div>
         <div class="navicon pull-right hidden-md hidden-lg">
-          <i class="fa fa-bars fa-2x"></i>
+          <a href="#"><i class="fa fa-bars fa-2x"></i></a>
         </div>
       </div>
       <div class="container-fluid mobile-menu">
@@ -733,7 +733,7 @@
             <li class="search">
               <input type="text" name="search_text" class="search-box" placeholder="Search..." autocomplete="off">
             </li>
-            <li class="login">
+            <li class="login-signup">
               <a class="log-in" href="#">Log In / Sign Up</a>
             </li>
           </ul>
@@ -822,6 +822,10 @@
       $("nav.main .login").on("click", function() {
         $('#login-modal').modal('show')
       });
+
+      $("nav.main .login-signup").on("click", function() {
+        $('#login-modal').modal('show')
+      });
     </script>
     <div class="property" itemscope="" itemtype="http://schema.org/LocalBusiness">
       <div class="cover" data-bg-image="https://s3.amazonaws.com//aptamigo-production/uploads/property/cover_photo/1232/d760ddbf-68e1-4b3c-a239-3406ef483a84.jpg" id="bg-image" style="background-image: url(&quot;https://s3.amazonaws.com//aptamigo-production/uploads/property/cover_photo/1232/d760ddbf-68e1-4b3c-a239-3406ef483a84.jpg&quot;);"></div>
@@ -836,14 +840,14 @@
                       <h1 itemprop="name">Optima Chicago Center Apartments</h1>
                     </div>
                     <div class="row">
-                      <div class="address-section col-md-3">
+                      <div class="address-section col-md-3 col-sm-5">
                         <p class="address">200 E Illinois Street Chicago, IL</p>
                         <a href="http://blog.aptamigo.com/streeterville/">
                           <h2 class="like-body">Streeterville</h2>
                         </a>
                         <div class="overall_rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
                           <div class="row">
-                            <div class="col-md-3 amenities">
+                            <div class="col-md-5 amenities">
                               <meta content="5.0" itemprop="ratingValue">
                               <meta content="5" itemprop="bestRating">
                               <meta content="2" itemprop="reviewcount">
@@ -852,8 +856,6 @@
                                   <input name="score" type="hidden" value="5" readonly="">
                                 </div>
                               </a>
-                            </div>
-                            <div class="col-md-5 col-md-offset-1">
                               <div class="rating_count">
                                 <a href="https://www.aptamigo.com/IL/Chicago/Apartment/optima-chicago-center/reviews">2 reviews</a>
                               </div>
@@ -861,23 +863,23 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-5 meta-info-wrapper hidden-sm hidden-xs">
+                      <div class="meta-info-wrapper col-sm-7 col-md-5">
                         <div class="meta-info">
-                          <div class="row">
-                            <div class="col-md-3">
+                          <div class="row col-sm-12 col-md-12">
+                            <div class="icon col-sm-3 col-xs-12">
                               <a class="units" id="units-icon-info"><i class="fa fa-home fa-lg"></i>
                                 <div>Units</div>
                                 <strong>3</strong>
                               </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="icon col-sm-4 col-xs-12">
                               <div class="price">
                                 <i class="fa fa-credit-card"></i>
                                 <div>Price Range</div>
                                 <strong>$3746-$3746</strong>
                               </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="icon col-sm-3 col-xs-12">
                               <a id="amenities-icon-info">
                                 <i class="fa fa-list"></i>
                                 <div>Amenities</div>

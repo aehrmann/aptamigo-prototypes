@@ -1,14 +1,11 @@
-;(function($) {
   $(document).ready(function() {
     var closed = true;
 
-    $('.navicon').on('click', function() {
-      if(closed) {
-        $('.mobile-menu').slideDown(200);
-      } else {
-        $('.mobile-menu').slideUp(200);
-      }
-      closed = !closed;
+    console.log('custom loaded');
+    $('.navicon').on('click', function(e) {
+      e.preventDefault();
+      alert('hello');
+      $('.mobile-menu').slideDown(200);
     });
   });
-})(window.jQuery);
+
