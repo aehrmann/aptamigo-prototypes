@@ -3,65 +3,76 @@
     <title>AptAmigo Form Demo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="form-request.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
+    <div class="container">
 
-    <form id="new_tour_lead" class="new_lead" action="" accept-charset="UTF-8" data-remote="true" method="post">
-      <div class="field">
-        <input name="utf8" type="hidden" value="&#x2713;" />
-      </div>
-      <div class="field">
-        <input type="hidden" name="lead[unit_id]" id="lead_unit_id" />
-      </div>
-      <div class="field">
-        <select name="lead[tour_time]" id="lead_tour_time">
-          <option value="">Tour time</option>
-          <option value="9:00 AM">9:00 AM</option>
-          <option value="9:30 AM">9:30 AM</option>
-          <option value="10:00 AM">10:00 AM</option>
-          <option value="10:30 AM">10:30 AM</option>
-          <option value="11:00 AM">11:00 AM</option>
-          <option value="11:30 AM">11:30 AM</option>
-          <option value="12:00 PM">12:00 PM</option>
-          <option value="12:30 PM">12:30 PM</option>
-          <option value="1:00 PM">1:00 PM</option>
-          <option value="1:30 PM">1:30 PM</option>
-          <option value="2:00 PM">2:00 PM</option>
-          <option value="2:30 PM">2:30 PM</option>
-          <option value="3:00 PM">3:00 PM</option>
-          <option value="3:30 PM">3:30 PM</option>
-          <option value="4:00 PM">4:00 PM</option>
-          <option value="4:30 PM">4:30 PM</option>
-          <option value="5:00 PM">5:00 PM</option>
-          <option value="5:30 PM">5:30 PM</option>
-          <option value="6:00 PM">6:00 PM</option>
-        </select>
-      </div>
-      <div class="field">
-        <input placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name" />
-      </div>
-      <div class="field">
-        <input placeholder="Email address *" value="" type="text" name="lead[email]" id="lead_email" />
-      </div>
-      <div class="field">
-        <input placeholder="Phone number" type="text" name="lead[phone]" id="lead_phone" />
-      </div>
-      <div class="field half">
-        <select name="lead[bed_count_desired]" id="lead_bed_count_desired"><option disabled default selected>Beds *</option>
-          <option value='0'>Studio</option><option value='1'>1+</option>
-          <option value='2'>2+</option><option value='3'>3+</option>
-          <option value='4'>4+</option><option value='5'>5+</option>
-        </select>
-      </div>
-      <div class="field half clear-fix">
-        <input placeholder="Move-in date *" class="date-picker" type="text" name="lead[move_in_date]" id="lead_move_in_date" />
-      </div>
-      <div class="field">
-        <textarea placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
-      </div>
-      <input type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting" onclick="requestForm()"/>
-    </form>
+      <div class="row">
+        <div class="jumbotron col-xs-6 col-xs-offset-3">
+          <form id="new_tour_lead" class="new_lead" action="" accept-charset="UTF-8" data-remote="true" method="post">
+            <div class="field">
+              <input name="utf8" type="hidden" value="&#x2713;" />
+            </div>
+            <div class="field">
+              <input type="hidden" name="lead[unit_id]" id="lead_unit_id" />
+            </div>
 
+            <div class="form-group">
+              <div class="field">
+                <select class="form-control" name="lead[tour_time]" id="lead_tour_time">
+                  <option value="">Tour time</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="9:30 AM">9:30 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="10:30 AM">10:30 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="11:30 AM">11:30 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="1:30 PM">1:30 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="2:30 PM">2:30 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="3:30 PM">3:30 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="4:30 PM">4:30 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="5:30 PM">5:30 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                </select>
+              </div>
+              <div class="field">
+                <input class="form-control" placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name" />
+              </div>
+              <div class="field">
+                <input class="form-control" placeholder="Email address *" value="" type="text" name="lead[email]" id="lead_email" />
+              </div>
+              <div class="field">
+                <input class="form-control" placeholder="Phone number" type="text" name="lead[phone]" id="lead_phone" />
+              </div>
+              <div class="field half">
+                <select class="form-control" name="lead[bed_count_desired]" id="lead_bed_count_desired"><option disabled default selected>Beds *</option>
+                  <option value='0'>Studio</option><option value='1'>1+</option>
+                  <option value='2'>2+</option><option value='3'>3+</option>
+                  <option value='4'>4+</option><option value='5'>5+</option>
+                </select>
+              </div>
+              <div class="field half clear-fix">
+                <input class="form-control" placeholder="Move-in date *" class="date-picker" type="text" name="lead[move_in_date]" id="lead_move_in_date" />
+              </div>
+              <div class="field">
+                <textarea class="form-control" placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
+              </div>
+              <input id="submit-button" type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting"/>
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
     <div id="demo"></div>
   </body>
 </html>
