@@ -1,3 +1,16 @@
+/*hero image*/
+body[data-controller="pages"][data-action="index"] .hero {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+      url('../assets/images/hero-interior.jpg');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      height: 660px;
+}
+
 /*remove navbar color for home page*/
 body[data-controller="pages"][data-action="index"] nav.main {
   background-color: transparent;
@@ -23,7 +36,8 @@ nav.main .links ul {
 }
 
 /*responsive title copy*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  /*adjust font sizes for smaller screens*/
   body[data-controller="pages"][data-action="index"] .hero .search h3.like-h1 {
     font-size: 2.5rem;
   }
@@ -32,5 +46,19 @@ nav.main .links ul {
     font-size: 2.2rem;
   }
 }
+
+@media screen and (max-width: 667px) {
+  /*adjust hero image for smaller screens*/
+  body[data-controller="pages"][data-action="index"] .hero {
+    background-position: 80%;
+    height: 620px;
+  }
+
+  /*make headline of 1st section visible above the fold*/
+  body[data-controller="pages"][data-action="index"] .neighborhoods {
+    padding-top: 2em;
+  }
+}
+
 
 
