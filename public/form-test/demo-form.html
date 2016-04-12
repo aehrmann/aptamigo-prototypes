@@ -20,30 +20,6 @@
 
             <div class="form-group">
               <div class="field">
-                <select class="form-control" name="lead[tour_time]" id="lead_tour_time">
-                  <option value="">Tour time</option>
-                  <option value="9:00 AM">9:00 AM</option>
-                  <option value="9:30 AM">9:30 AM</option>
-                  <option value="10:00 AM">10:00 AM</option>
-                  <option value="10:30 AM">10:30 AM</option>
-                  <option value="11:00 AM">11:00 AM</option>
-                  <option value="11:30 AM">11:30 AM</option>
-                  <option value="12:00 PM">12:00 PM</option>
-                  <option value="12:30 PM">12:30 PM</option>
-                  <option value="1:00 PM">1:00 PM</option>
-                  <option value="1:30 PM">1:30 PM</option>
-                  <option value="2:00 PM">2:00 PM</option>
-                  <option value="2:30 PM">2:30 PM</option>
-                  <option value="3:00 PM">3:00 PM</option>
-                  <option value="3:30 PM">3:30 PM</option>
-                  <option value="4:00 PM">4:00 PM</option>
-                  <option value="4:30 PM">4:30 PM</option>
-                  <option value="5:00 PM">5:00 PM</option>
-                  <option value="5:30 PM">5:30 PM</option>
-                  <option value="6:00 PM">6:00 PM</option>
-                </select>
-              </div>
-              <div class="field">
                 <input class="form-control" placeholder="Full name *" value="" type="text" name="lead[name]" id="lead_name" />
               </div>
               <div class="field">
@@ -65,7 +41,7 @@
               <div class="field">
                 <textarea class="form-control" placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
               </div>
-              <input id="submit-button" type="submit" name="commit" value="Submit" class="btn btn-block" data-disable-with="Submitting"/>
+              <input id="submit-button" type="submit" name="commit" value="Submit" class="btn btn-block" onclick="requestForm()" />
 
             </div>
           </div>
