@@ -1,0 +1,64 @@
+/*hero image*/
+body[data-controller="pages"][data-action="index"] .hero {
+  background:
+    radial-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+      ),
+      url('../assets/images/hero-interior.jpg');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      height: 660px;
+}
+
+/*remove navbar color for home page*/
+body[data-controller="pages"][data-action="index"] nav.main {
+  background-color: transparent;
+}
+
+/*spacing for title, tagline, and form*/
+body[data-controller="pages"][data-action="index"] .hero .search h3.like-h1 {
+  margin-bottom: 1rem;
+}
+
+body[data-controller="pages"][data-action="index"] .hero .search h2.like-h4 {
+  margin-bottom: 9rem;
+}
+
+/*remove navigation sign up background color to focus call to action on search*/
+nav.main .links li, nav.main .links li.button, nav.main .links li.login {
+  margin-right: 0;
+  background-color: transparent;
+}
+
+nav.main .links ul {
+  margin-right: 0;
+}
+
+/*responsive title copy*/
+@media screen and (max-width: 767px) {
+  /*adjust font sizes for smaller screens*/
+  body[data-controller="pages"][data-action="index"] .hero .search h3.like-h1 {
+    font-size: 2.5rem;
+  }
+
+  body[data-controller="pages"][data-action="index"] .hero .search h3.like-h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  /*adjust hero image for smaller screens*/
+  body[data-controller="pages"][data-action="index"] .hero {
+    background-position: 80%;
+    height: 620px;
+  }
+
+  /*make headline of 1st section visible above the fold*/
+  body[data-controller="pages"][data-action="index"] .neighborhoods {
+    padding-top: 2em;
+  }
+}
+
+
+
