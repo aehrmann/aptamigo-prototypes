@@ -7,7 +7,7 @@
     var moveInDate= document.getElementById("lead_move_in_date").value;
     var beds = document.getElementById("lead_bed_count_desired").value;
     var comments = document.getElementById("lead_comments").value;
-    var url = "https://crm.zoho.com/crm/private/xml/Contacts/insertRecords?authtoken=eadc26aad2628056fbf19e0307e10f96&scope=crmapi&newFormat=1&xmlData=" + 
+    var url = "https://crm.zoho.com/crm/private/xml/Contacts/insertRecords?authtoken=79e679562772681ad008f06f418e6921&scope=crmapi&newFormat=1&xmlData=" + 
     "%3CContacts%3E%3Crow%20no%3D%221%22%3E%3CFL%20val%3D%22Last%20Name%22%3E" + name + 
       "%3C%2FFL%3E%3CFL%20val%3D%22Email%22%3E" + email + 
       "%3C%2FFL%3E%3CFL%20val%3D%22Phone%22%3E" + phone + 
@@ -16,7 +16,7 @@
       "%3C%2FFL%3E%3CFL%20val%3D%22Comments%22%3E" + comments + 
       "%3C%2FFL%3E%3C%2Frow%3E%3C%2FContacts%3E";
     return url;
-  }
+  };
 
   function createCORSRequest(method, url) {
     var xhr = new XMLHttpRequest();
