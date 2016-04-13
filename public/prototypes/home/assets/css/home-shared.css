@@ -1,8 +1,3 @@
-/*nav bar bg color*/
-body[data-controller="pages"][data-action="index"] nav.main {
-  background-color: #26374c;
-}
-
 /*nav bar*/
 nav.main .links ul {
   margin-right: 4em;
@@ -14,4 +9,80 @@ nav.main .links li.login {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
+
+/*hero styling*/
+
+/*use same original search class styling on added title section*/
+body[data-controller="pages"][data-action="index"] .hero .title {
+  top: 40%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  text-align: center
+}
+body[data-controller="pages"][data-action="index"] .hero .title #neighborhood-guide a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 20px
+}
+body[data-controller="pages"][data-action="index"] .hero .title h2.like-h4 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: bold
+}
+
+body[data-controller="pages"][data-action="index"] .hero .title h3.like-h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px
+}
+
+/*remove navbar color for home page*/
+body[data-controller="pages"][data-action="index"] nav.main {
+  background-color: transparent;
+}
+
+/*remove navigation sign up background color to focus call to action on search*/
+nav.main .links li, nav.main .links li.button, nav.main .links li.login {
+  margin-right: 0;
+  background-color: transparent;
+}
+
+nav.main .links ul {
+  margin-right: 0;
+}
+
+/*responsive title copy*/
+@media screen and (max-width: 767px) {
+  /*adjust font sizes for smaller screens*/
+  body[data-controller="pages"][data-action="index"] .hero .search h3.like-h1 {
+    font-size: 2.5rem;
+  }
+
+  body[data-controller="pages"][data-action="index"] .hero .search h3.like-h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  /*adjust hero image for smaller screens*/
+  body[data-controller="pages"][data-action="index"] .hero {
+    background-position: 80%;
+    height: 620px;
+  }
+
+  /*make headline of 1st section visible above the fold*/
+  body[data-controller="pages"][data-action="index"] .neighborhoods {
+    padding-top: 2em;
+  }
+}
+
+
+
 
