@@ -2,16 +2,16 @@
   <head>
     <title>AptAmigo Form Demo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="form-request.js"></script>
+    <script type="text/javascript" src="demo-form.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="form-page.css">
+    <link rel="stylesheet" href="demo-form.css">
   </head>
   <body>
     <div class="container">
 
       <div class="row">
         <div class="jumbotron col-xs-6 col-xs-offset-3">
-          <form id="new_tour_lead" class="new_lead" action="" accept-charset="UTF-8" data-remote="true" method="post">
+          <form id="new_tour_lead" class="new_lead" action="" accept-charset="UTF-8" data-remote="true">
             <div class="field">
               <input name="utf8" type="hidden" value="&#x2713;" />
             </div>
@@ -42,7 +42,7 @@
               <div class="field">
                 <textarea class="form-control" placeholder="Parking? Pets? Max Budget?" name="lead[comments]" id="lead_comments"></textarea>
               </div>
-              <input id="submit-button" type="submit" name="commit" value="Submit" class="btn btn-block" onclick="requestForm()" />
+              <input id="submit-button" type="submit" name="commit" value="Submit" class="btn btn-block" />
 
             </div>
           </div>

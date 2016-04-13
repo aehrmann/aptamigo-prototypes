@@ -1,3 +1,15 @@
+window.onload = addLink();
+
+function addLink(){
+	document.addEventListener("DOMContentLoaded", function() {
+		document.getElementById("submit-button").addEventListener("click", function(){
+			requestForm ();
+			return false
+		});
+		return false
+	});
+}
+
 function createUrl (){
 	var name = document.getElementById("lead_name").value;
 	var email = document.getElementById("lead_email").value;
