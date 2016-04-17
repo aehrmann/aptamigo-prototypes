@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git@bitbucket.org:ariehrmann/aptamigo-prototypes.git"
   },
+  "engines": {
+    "node": "5.2.0",
+    "npm": "3.7.3"
+  },
   "dependencies": {
     "express": "*"
   },
