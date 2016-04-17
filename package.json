@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git@bitbucket.org:ariehrmann/aptamigo-prototypes.git"
   },
+  "dependencies": {
+    "express": "*"
+  },
   "author": "Ari Ehrmann",
   "homepage": "https://bitbucket.org/ariehrmann/aptamigo-prototypes#readme"
 }
